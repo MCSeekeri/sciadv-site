@@ -1,0 +1,790 @@
+<!DOCTYPE html><html lang="zh-CN"><head hexo-theme="https://github.com/volantis-x/hexo-theme-volantis/#6.0.0-alpha.1"><meta name="generator" content="Hexo 7.3.0"><meta name="Volantis" content="6.0.0-alpha.1"><meta charset="utf-8"><link rel="canonical" href="https://lib.sci-adv.cc/archives/ff129072/"><meta http-equiv="x-dns-prefetch-control" content="on"><link rel="dns-prefetch" href="https://unpkg.onmicrosoft.cn"><link rel="preconnect" href="https://unpkg.onmicrosoft.cn" crossorigin><link rel="dns-prefetch" href="https://unpkg.com"><link rel="preconnect" href="https://unpkg.com" crossorigin><link rel="dns-prefetch" href="https://cdn.bootcdn.net"><link rel="preconnect" href="https://cdn.bootcdn.net" crossorigin><meta name="renderer" content="webkit"><meta name="force-rendering" content="webkit"><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"><meta http-equiv="Content-Security-Policy" content=""><meta name="HandheldFriendly" content="True"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;900&family=Roboto:wght@300;900&display=swap" rel="stylesheet" media="print" onload='this.media="all"'><link rel="preload" href="/css/style.css" as="style"><title>S;G:负荷领域的既视感 QA 手册 - 科学ADV图书馆</title><meta name="keywords" content="设定,讨论探究,小说,命运石之门,科学ADV,混沌之子,混沌之脑,资源,整合,机器人笔记,匿名代码"><meta desc name="description" content="Steins;Gate 剧场版：负荷领域的既视感相关核心设定说明与常见问题的解答~ - MCSeekeri - 科学ADV图书馆"><meta property="og:type" content="article"><meta property="og:title" content="S;G:负荷领域的既视感 QA 手册"><meta property="og:url" content="https://lib.sci-adv.cc/archives/ff129072/"><meta property="og:site_name" content="科学ADV图书馆"><meta property="og:description" content="Steins;Gate 剧场版：负荷领域的既视感相关核心设定说明与常见问题的解答~"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://lib.sci-adv.cc/favicon.ico"><meta property="article:published_time" content="2021-08-10T04:51:00.000Z"><meta property="article:modified_time" content="2024-07-25T11:20:37.000Z"><meta property="article:author" content="MCSeekeri"><meta property="article:tag" content="设定"><meta property="article:tag" content="讨论探究"><meta name="twitter:card" content="summary"><meta name="twitter:image" content="https://lib.sci-adv.cc/favicon.ico"><style>#safearea{display:none}:root{--color-site-body:#f4f4f4;--color-site-bg:#f4f4f4;--color-site-inner:#fff;--color-site-footer:#666;--color-card:#fff;--color-text:#444;--color-block:#f6f6f6;--color-inlinecode:#c74f00;--color-codeblock:#fff7ea;--color-h1:#3a3a3a;--color-h2:#3a3a3a;--color-h3:#333;--color-h4:#444;--color-h5:#555;--color-h6:#666;--color-p:#444;--color-list:#666;--color-list-hl:#30ad91;--color-meta:#888;--color-read-bkg:#e0d8c8;--color-read-post:#f8f1e2;--color-copyright-bkg:#f5f5f5}*{box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;outline:0;margin:0;padding:0}::-webkit-scrollbar{height:4px;width:4px}::-webkit-scrollbar-track-piece{background:0 0}::-webkit-scrollbar-thumb{background:#3dd9b6;cursor:pointer;border-radius:2px;-webkit-border-radius:2px}::-webkit-scrollbar-thumb:hover{background:#ff5722}html{color:var(--color-text);width:100%;height:100%;font-family:Roboto,"Noto Serif SC","PingFang SC","Microsoft Yahei UI","Microsoft Yahei",sans-serif,Menlo,Monaco,monospace,sans-serif;font-size:16px}html>::-webkit-scrollbar{height:12px;width:12px}html>::-webkit-scrollbar-track-piece{background:0 0}html>::-webkit-scrollbar-thumb{background:#3dd9b6;cursor:pointer;border-radius:3px;-webkit-border-radius:3px}html>::-webkit-scrollbar-thumb:hover{background:#ff5722}body{background-color:var(--color-site-body);text-rendering:optimizelegibility;-webkit-tap-highlight-color:transparent;line-height:1.6;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}body.modal-active{overflow:hidden}@media screen and (max-width:680px){body.modal-active{position:fixed;top:0;right:0;bottom:0;left:0}}a{color:#2092ec;cursor:pointer;text-decoration:none;transition:all .28s ease;-webkit-transition:all .28s ease;-khtml-transition:all .28s ease;-moz-transition:all .28s ease;-o-transition:all .28s ease;-ms-transition:all .28s ease}a:hover{color:#ff5722}a:active,a:hover{outline:0}ol,ul{padding-left:0}ol li,ul li{list-style:none}header{display:-webkit-box;display:-moz-box;display:block}img{border:0;background:0 0;max-width:100%}svg:not(:root){overflow:hidden}hr{-moz-box-sizing:content-box;box-sizing:content-box;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;height:0;border:0;border-radius:1px;-webkit-border-radius:1px;border-bottom:1px solid rgba(68,68,68,.1)}button,input{color:inherit;font:inherit;margin:0}button{overflow:visible;text-transform:none;-webkit-appearance:button;cursor:pointer}@supports (backdrop-filter:blur(20px)){.blur{background:rgba(255,255,255,.9)!important;backdrop-filter:saturate(200%) blur(20px)}}@supports (backdrop-filter:blur(20px)){.blur#comments{backdrop-filter:unset}}#layoutHelper-comments{margin-bottom:100px}.shadow{box-shadow:0 1px 2px 0 rgba(0,0,0,.1);-webkit-box-shadow:0 1px 2px 0 rgba(0,0,0,.1)}.shadow.floatable{transition:all .28s ease;-webkit-transition:all .28s ease;-khtml-transition:all .28s ease;-moz-transition:all .28s ease;-o-transition:all .28s ease;-ms-transition:all .28s ease}.shadow.floatable:hover{box-shadow:0 2px 4px 0 rgba(0,0,0,.1),0 4px 8px 0 rgba(0,0,0,.1),0 8px 16px 0 rgba(0,0,0,.1);-webkit-box-shadow:0 2px 4px 0 rgba(0,0,0,.1),0 4px 8px 0 rgba(0,0,0,.1),0 8px 16px 0 rgba(0,0,0,.1)}#l_cover{min-height:64px}.cover-wrapper{top:0;left:0;max-width:100%;height:100vh;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;display:flex;flex-wrap:nowrap;-webkit-flex-wrap:nowrap;-khtml-flex-wrap:nowrap;-moz-flex-wrap:nowrap;-o-flex-wrap:nowrap;-ms-flex-wrap:nowrap;-webkit-box-direction:normal;-moz-box-direction:normal;-webkit-box-orient:vertical;-moz-box-orient:vertical;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;align-items:center;align-self:center;align-content:center;color:var(--color-site-inner);padding:0 16px;user-select:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;position:relative;overflow:hidden;margin-bottom:-100px}.cover-wrapper .cover-bg{position:absolute;width:100%;height:100%;background-position:center;background-size:cover;-webkit-background-size:cover;-moz-background-size:cover}.cover-wrapper .cover-bg.lazyload:not(.loaded){opacity:0;-webkit-opacity:0;-moz-opacity:0}.cover-wrapper .cover-bg.lazyload.loaded{animation-delay:0s;animation-duration:.5s;animation-fill-mode:forwards;animation-timing-function:ease-out;animation-name:fadeIn}@-moz-keyframes fadeIn{0%{opacity:0;-webkit-opacity:0;-moz-opacity:0;filter:blur(12px);transform:scale(1.02);-webkit-transform:scale(1.02);-khtml-transform:scale(1.02);-moz-transform:scale(1.02);-o-transform:scale(1.02);-ms-transform:scale(1.02)}100%{opacity:1;-webkit-opacity:1;-moz-opacity:1}}@-webkit-keyframes fadeIn{0%{opacity:0;-webkit-opacity:0;-moz-opacity:0;filter:blur(12px);transform:scale(1.02);-webkit-transform:scale(1.02);-khtml-transform:scale(1.02);-moz-transform:scale(1.02);-o-transform:scale(1.02);-ms-transform:scale(1.02)}100%{opacity:1;-webkit-opacity:1;-moz-opacity:1}}@-o-keyframes fadeIn{0%{opacity:0;-webkit-opacity:0;-moz-opacity:0;filter:blur(12px);transform:scale(1.02);-webkit-transform:scale(1.02);-khtml-transform:scale(1.02);-moz-transform:scale(1.02);-o-transform:scale(1.02);-ms-transform:scale(1.02)}100%{opacity:1;-webkit-opacity:1;-moz-opacity:1}}@keyframes fadeIn{0%{opacity:0;-webkit-opacity:0;-moz-opacity:0;filter:blur(12px);transform:scale(1.02);-webkit-transform:scale(1.02);-khtml-transform:scale(1.02);-moz-transform:scale(1.02);-o-transform:scale(1.02);-ms-transform:scale(1.02)}100%{opacity:1;-webkit-opacity:1;-moz-opacity:1}}.cover-wrapper .cover-body{z-index:1;position:relative;width:100%;height:100%}.cover-wrapper#full{height:calc(100vh + 100px);padding-bottom:100px}.cover-wrapper#half{max-height:640px;min-height:400px;height:calc(36vh - 64px + 200px)}.cover-wrapper #scroll-down{width:100%;height:64px;position:absolute;bottom:100px;text-align:center;cursor:pointer}.cover-wrapper #scroll-down .scroll-down-effects{color:#fff;font-size:24px;line-height:64px;position:absolute;width:24px;left:calc(50% - 12px);text-shadow:0 1px 2px rgba(0,0,0,.1);animation:scroll-down-effect 1.5s infinite;-webkit-animation:scroll-down-effect 1.5s infinite;-khtml-animation:scroll-down-effect 1.5s infinite;-moz-animation:scroll-down-effect 1.5s infinite;-o-animation:scroll-down-effect 1.5s infinite;-ms-animation:scroll-down-effect 1.5s infinite}@-moz-keyframes scroll-down-effect{0%{top:0;opacity:1;-webkit-opacity:1;-moz-opacity:1}50%{top:-16px;opacity:.4;-webkit-opacity:.4;-moz-opacity:.4}100%{top:0;opacity:1;-webkit-opacity:1;-moz-opacity:1}}@-webkit-keyframes scroll-down-effect{0%{top:0;opacity:1;-webkit-opacity:1;-moz-opacity:1}50%{top:-16px;opacity:.4;-webkit-opacity:.4;-moz-opacity:.4}100%{top:0;opacity:1;-webkit-opacity:1;-moz-opacity:1}}@-o-keyframes scroll-down-effect{0%{top:0;opacity:1;-webkit-opacity:1;-moz-opacity:1}50%{top:-16px;opacity:.4;-webkit-opacity:.4;-moz-opacity:.4}100%{top:0;opacity:1;-webkit-opacity:1;-moz-opacity:1}}@keyframes scroll-down-effect{0%{top:0;opacity:1;-webkit-opacity:1;-moz-opacity:1}50%{top:-16px;opacity:.4;-webkit-opacity:.4;-moz-opacity:.4}100%{top:0;opacity:1;-webkit-opacity:1;-moz-opacity:1}}.cover-wrapper .cover-body{margin-top:64px;margin-bottom:100px}.cover-wrapper .cover-body,.cover-wrapper .cover-body .bottom,.cover-wrapper .cover-body .top{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;display:flex;-webkit-box-direction:normal;-moz-box-direction:normal;-webkit-box-orient:vertical;-moz-box-orient:vertical;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;align-items:center;justify-content:center;-webkit-justify-content:center;-khtml-justify-content:center;-moz-justify-content:center;-o-justify-content:center;-ms-justify-content:center;max-width:100%}.cover-wrapper .cover-body .bottom{margin-top:32px}.cover-wrapper .cover-body .title{font-family:Roboto,"Noto Serif SC","PingFang SC","Microsoft Yahei UI","Microsoft Yahei",sans-serif,Helvetica,monospace;font-size:3.125rem;line-height:1.2;text-shadow:0 1px 2px rgba(0,0,0,.1)}.cover-wrapper .cover-body .subtitle{font-size:20px}.cover-wrapper .cover-body .logo{max-height:120px;max-width:calc(100% - 4 * 16px)}@media screen and (min-height:1024px){.cover-wrapper .cover-body .title{font-size:3rem}.cover-wrapper .cover-body .subtitle{font-size:1.05rem}.cover-wrapper .cover-body .logo{max-height:150px}}.cover-wrapper .cover-body .m_search{position:relative;max-width:calc(100% - 16px);width:320px;vertical-align:middle}.cover-wrapper .cover-body .m_search .form{position:relative;display:-webkit-box;display:-moz-box;display:block;width:100%}.cover-wrapper .cover-body .m_search .icon,.cover-wrapper .cover-body .m_search .input{transition:all .28s ease;-webkit-transition:all .28s ease;-khtml-transition:all .28s ease;-moz-transition:all .28s ease;-o-transition:all .28s ease;-ms-transition:all .28s ease}.cover-wrapper .cover-body .m_search .icon{position:absolute;display:-webkit-box;display:-moz-box;display:block;line-height:2.5rem;width:32px;top:0;left:5px;color:rgba(68,68,68,.75)}.cover-wrapper .cover-body .m_search .input{display:-webkit-box;display:-moz-box;display:block;height:2.5rem;width:100%;box-shadow:none;-webkit-box-shadow:none;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;font-size:.875rem;-webkit-appearance:none;padding-left:36px;border-radius:1.4rem;-webkit-border-radius:1.4rem;background:rgba(255,255,255,.6);backdrop-filter:blur(10px);border:none;color:var(--color-text)}@media screen and (max-width:500px){.cover-wrapper .cover-body .m_search .input{padding-left:36px}}.cover-wrapper .cover-body .m_search .input:hover{background:rgba(255,255,255,.8)}.cover-wrapper .cover-body .m_search .input:focus{background:#fff}.cover-wrapper .list-h{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;display:flex;-webkit-box-direction:normal;-moz-box-direction:normal;-webkit-box-orient:horizontal;-moz-box-orient:horizontal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;flex-wrap:wrap;-webkit-flex-wrap:wrap;-khtml-flex-wrap:wrap;-moz-flex-wrap:wrap;-o-flex-wrap:wrap;-ms-flex-wrap:wrap;align-items:stretch;border-radius:4px;-webkit-border-radius:4px;user-select:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none}.cover-wrapper .list-h a{-webkit-box-flex:1;-moz-box-flex:1;-webkit-flex:1 0;-ms-flex:1 0;flex:1 0;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;display:flex;font-weight:600}.cover-wrapper .list-h a img{display:-webkit-box;display:-moz-box;display:block;border-radius:2px;-webkit-border-radius:2px;margin:4px;min-width:40px;max-width:44px}@media screen and (max-width:768px){.cover-wrapper .list-h a img{min-width:36px;max-width:40px}}@media screen and (max-width:500px){.cover-wrapper .list-h a img{margin:2px 4px;min-width:32px;max-width:36px}}@media screen and (max-width:375px){.cover-wrapper .list-h a img{min-width:28px;max-width:32px}}.cover-wrapper{max-width:100%}.cover-wrapper.search .bottom .menu{margin-top:16px}.cover-wrapper.search .bottom .menu .list-h a{white-space:nowrap;-webkit-box-direction:normal;-moz-box-direction:normal;-webkit-box-orient:horizontal;-moz-box-orient:horizontal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;align-items:baseline;padding:2px;margin:4px;color:var(--color-site-inner);opacity:.75;-webkit-opacity:.75;-moz-opacity:.75;text-shadow:0 1px 2px rgba(0,0,0,.05);border-bottom:2px solid transparent}.cover-wrapper.search .bottom .menu .list-h a i{margin-right:4px}.cover-wrapper.search .bottom .menu .list-h a p{font-size:.9375rem}.cover-wrapper.search .bottom .menu .list-h a.active,.cover-wrapper.search .bottom .menu .list-h a:active,.cover-wrapper.search .bottom .menu .list-h a:hover{opacity:1;-webkit-opacity:1;-moz-opacity:1;border-bottom:2px solid var(--color-site-inner)}.cover-wrapper.dock .menu,.cover-wrapper.featured .menu,.cover-wrapper.focus .menu{border-radius:6px;-webkit-border-radius:6px}.cover-wrapper.dock .menu .list-h a,.cover-wrapper.featured .menu .list-h a,.cover-wrapper.focus .menu .list-h a{-webkit-box-direction:normal;-moz-box-direction:normal;-webkit-box-orient:vertical;-moz-box-orient:vertical;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;align-items:center;padding:12px;line-height:24px;border-radius:4px;-webkit-border-radius:4px;border-bottom:none;text-align:center;align-content:flex-end;color:rgba(68,68,68,.7);font-size:1.5rem}@media screen and (max-width:500px){.cover-wrapper.dock .menu .list-h a,.cover-wrapper.featured .menu .list-h a,.cover-wrapper.focus .menu .list-h a{padding:12px 8px}}.cover-wrapper.dock .menu .list-h a i,.cover-wrapper.featured .menu .list-h a i,.cover-wrapper.focus .menu .list-h a i{margin:8px}.cover-wrapper.dock .menu .list-h a p,.cover-wrapper.featured .menu .list-h a p,.cover-wrapper.focus .menu .list-h a p{font-size:.875rem}.cover-wrapper.dock .menu .list-h a.active,.cover-wrapper.featured .menu .list-h a.active,.cover-wrapper.focus .menu .list-h a.active{background:var(--color-card);backdrop-filter:none}.cover-wrapper.dock .menu .list-h a.active i,.cover-wrapper.dock .menu .list-h a.active i+p,.cover-wrapper.featured .menu .list-h a.active i,.cover-wrapper.featured .menu .list-h a.active i+p,.cover-wrapper.focus .menu .list-h a.active i,.cover-wrapper.focus .menu .list-h a.active i+p{color:#3dd9b6}.cover-wrapper.dock .menu .list-h a.active img+p,.cover-wrapper.featured .menu .list-h a.active img+p,.cover-wrapper.focus .menu .list-h a.active img+p{color:var(--color-text)}.cover-wrapper.dock .menu .list-h a:hover,.cover-wrapper.featured .menu .list-h a:hover,.cover-wrapper.focus .menu .list-h a:hover{background:var(--color-card)}.cover-wrapper.dock .top{margin-bottom:48px}.cover-wrapper.dock .menu{background:rgba(255,255,255,.5);position:absolute;bottom:0;max-width:100%}.cover-wrapper.dock .menu .list-h{flex-wrap:nowrap;-webkit-flex-wrap:nowrap;-khtml-flex-wrap:nowrap;-moz-flex-wrap:nowrap;-o-flex-wrap:nowrap;-ms-flex-wrap:nowrap;margin:4px}.cover-wrapper.dock .menu .list-h a+a{margin-left:4px}@media screen and (max-width:500px){.cover-wrapper.dock .menu .list-h{overflow-x:scroll}.cover-wrapper.dock .menu .list-h::-webkit-scrollbar{height:0;width:0}.cover-wrapper.dock .menu .list-h::-webkit-scrollbar-track-piece{background:0 0}.cover-wrapper.dock .menu .list-h::-webkit-scrollbar-thumb{background:#3dd9b6;cursor:pointer;border-radius:0;-webkit-border-radius:0}.cover-wrapper.dock .menu .list-h::-webkit-scrollbar-thumb:hover{background:#ff5722}}@supports (backdrop-filter:blur(20px)){.cover-wrapper.dock .menu{background:rgba(255,255,255,.5);backdrop-filter:saturate(200%) blur(20px)}}@media (prefers-color-scheme:dark){:root{--color-mode:'dark'}:root:not([color-scheme]){--color-site-body:#121212;--color-read-bkg:#1f1f1f;--color-read-post:#262626;--color-site-bg:#1f1f1f;--color-site-inner:rgba(238,238,238,0.871);--color-site-footer:rgba(170,170,170,0.871);--color-card:#262626;--color-text:rgba(238,238,238,0.871);--color-block:#434343;--color-codeblock:#1f1f1f;--color-inlinecode:#d56d28;--color-h1:rgba(255,255,255,0.871);--color-h2:rgba(255,255,255,0.871);--color-h3:rgba(255,255,255,0.6);--color-h4:rgba(255,255,255,0.6);--color-h5:rgba(255,255,255,0.6);--color-h6:rgba(255,255,255,0.6);--color-p:rgba(217,217,217,0.871);--color-list:rgba(217,217,217,0.871);--color-list-hl:#63e0c4;--color-meta:rgba(191,191,191,0.871);--color-link:rgba(191,191,191,0.871);--color-copyright-bkg:#21252b}:root:not([color-scheme]) img{filter:brightness(50%)!important}:root:not([color-scheme]) .blur{background:rgba(31,31,31,.9)!important}:root:not([color-scheme]) .white-box.blur{background:rgba(38,38,38,.9)!important}:root:not([color-scheme]) .nav-main .u-search-input{background:var(--color-card)!important}:root:not([color-scheme]) #l_main .article .prev-next>a{background:var(--color-block)!important}:root:not([color-scheme]) #l_main .article .prev-next>a:hover{background:var(--color-site-bg)!important}:root:not([color-scheme]) .article blockquote{background:var(--color-block)!important}:root:not([color-scheme]) .article-title a{color:var(--color-h1)!important}:root:not([color-scheme]) details>summary{color:var(--color-p)!important;background:var(--color-site-bg)!important}:root:not([color-scheme]) details{border:1px solid var(--color-site-bg)!important;background:var(--color-site-bg)!important}:root:not([color-scheme]) #u-search .modal,:root:not([color-scheme]) #u-search .modal-body,:root:not([color-scheme]) #u-search .modal-header{background:var(--color-card)!important}:root:not([color-scheme]) #u-search .modal-body .modal-results .result:hover{background:var(--color-block)!important}:root:not([color-scheme]) .u-search-input:hover{background:var(--color-block)!important}:root:not([color-scheme]) .u-search-input:focus{background:var(--color-site-body)!important}}[color-scheme=dark]{--color-site-body:#121212;--color-read-bkg:#1f1f1f;--color-read-post:#262626;--color-site-bg:#1f1f1f;--color-site-inner:rgba(238,238,238,0.871);--color-site-footer:rgba(170,170,170,0.871);--color-card:#262626;--color-text:rgba(238,238,238,0.871);--color-block:#434343;--color-codeblock:#1f1f1f;--color-inlinecode:#d56d28;--color-h1:rgba(255,255,255,0.871);--color-h2:rgba(255,255,255,0.871);--color-h3:rgba(255,255,255,0.6);--color-h4:rgba(255,255,255,0.6);--color-h5:rgba(255,255,255,0.6);--color-h6:rgba(255,255,255,0.6);--color-p:rgba(217,217,217,0.871);--color-list:rgba(217,217,217,0.871);--color-list-hl:#63e0c4;--color-meta:rgba(191,191,191,0.871);--color-link:rgba(191,191,191,0.871);--color-copyright-bkg:#21252b}[color-scheme=dark] img{filter:brightness(50%)!important}[color-scheme=dark] .blur{background:rgba(31,31,31,.9)!important}[color-scheme=dark] .white-box.blur{background:rgba(38,38,38,.9)!important}[color-scheme=dark] .nav-main .u-search-input{background:var(--color-card)!important}[color-scheme=dark] #l_main .article .prev-next>a{background:var(--color-block)!important}[color-scheme=dark] #l_main .article .prev-next>a:hover{background:var(--color-site-bg)!important}[color-scheme=dark] .article blockquote{background:var(--color-block)!important}[color-scheme=dark] .article-title a{color:var(--color-h1)!important}[color-scheme=dark] details>summary{color:var(--color-p)!important;background:var(--color-site-bg)!important}[color-scheme=dark] details{border:1px solid var(--color-site-bg)!important;background:var(--color-site-bg)!important}[color-scheme=dark] #u-search .modal,[color-scheme=dark] #u-search .modal-body,[color-scheme=dark] #u-search .modal-header{background:var(--color-card)!important}[color-scheme=dark] #u-search .modal-body .modal-results .result:hover{background:var(--color-block)!important}[color-scheme=dark] .u-search-input:hover{background:var(--color-block)!important}[color-scheme=dark] .u-search-input:focus{background:var(--color-site-body)!important}@media screen and (max-width:500px){[color-scheme=dark] .l_header .m_search{background:var(--color-site-bg)!important}}.l_header{position:fixed;z-index:1000;top:0;width:100%;height:64px;background:var(--color-card);box-shadow:0 1px 2px 0 rgba(0,0,0,.1);-webkit-box-shadow:0 1px 2px 0 rgba(0,0,0,.1)}.l_header.auto{transition:opacity .4s ease;-webkit-transition:opacity .4s ease;-khtml-transition:opacity .4s ease;-moz-transition:opacity .4s ease;-o-transition:opacity .4s ease;-ms-transition:opacity .4s ease;visibility:hidden}.l_header.auto.show{opacity:1!important;-webkit-opacity:1!important;-moz-opacity:1!important;visibility:visible}.l_header .container{margin-left:16px;margin-right:16px}.l_header #wrapper{height:100%;user-select:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none}.l_header #wrapper .nav-main,.l_header #wrapper .nav-sub{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;display:flex;flex-wrap:nowrap;-webkit-flex-wrap:nowrap;-khtml-flex-wrap:nowrap;-moz-flex-wrap:nowrap;-o-flex-wrap:nowrap;-ms-flex-wrap:nowrap;justify-content:space-between;-webkit-justify-content:space-between;-khtml-justify-content:space-between;-moz-justify-content:space-between;-o-justify-content:space-between;-ms-justify-content:space-between;align-items:center}.l_header #wrapper .nav-main{transition:all .28s ease;-webkit-transition:all .28s ease;-khtml-transition:all .28s ease;-moz-transition:all .28s ease;-o-transition:all .28s ease;-ms-transition:all .28s ease}.l_header #wrapper.sub .nav-main{transform:translateY(-64px);-webkit-transform:translateY(-64px);-khtml-transform:translateY(-64px);-moz-transform:translateY(-64px);-o-transform:translateY(-64px);-ms-transform:translateY(-64px)}.l_header #wrapper .nav-sub{transition:all .28s ease;-webkit-transition:all .28s ease;-khtml-transition:all .28s ease;-moz-transition:all .28s ease;-o-transition:all .28s ease;-ms-transition:all .28s ease;opacity:0;-webkit-opacity:0;-moz-opacity:0;height:64px;width:calc(100% - 2 * 16px);position:absolute}.l_header #wrapper .nav-sub ::-webkit-scrollbar{display:-webkit-box;display:-moz-box;display:none}@media screen and (min-width:2048px){.l_header #wrapper .nav-sub{max-width:55vw;margin:auto}}.l_header #wrapper.sub .nav-sub{opacity:1;-webkit-opacity:1;-moz-opacity:1}.l_header #wrapper .title{position:relative;color:var(--color-text);padding-left:24px;max-height:64px}.l_header #wrapper .nav-main .title{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex-shrink:0;line-height:64px;padding:0 24px;font-size:1.25rem;font-family:Roboto,"Noto Serif SC","PingFang SC","Microsoft Yahei UI","Microsoft Yahei",sans-serif,Helvetica,monospace}.l_header #wrapper .nav-main .title img{height:64px}.l_header .nav-sub{max-width:1080px;margin:auto}.l_header .nav-sub .title{font-weight:700;font-family:Roboto,"Noto Serif SC","PingFang SC","Microsoft Yahei UI","Microsoft Yahei",sans-serif,Menlo,Monaco,monospace,sans-serif;line-height:1.2;max-height:64px;white-space:normal;flex-shrink:1}.l_header .switcher{display:-webkit-box;display:-moz-box;display:none;line-height:64px;align-items:center}.l_header .switcher .s-toc{display:-webkit-box;display:-moz-box;display:none}@media screen and (max-width:768px){.l_header .switcher .s-toc{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;display:flex}}.l_header .switcher>li{height:48px;transition:all .28s ease;-webkit-transition:all .28s ease;-khtml-transition:all .28s ease;-moz-transition:all .28s ease;-o-transition:all .28s ease;-ms-transition:all .28s ease;margin:2px}@media screen and (max-width:500px){.l_header .switcher>li{margin:0 1px;height:48px}}.l_header .switcher>li>a{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;display:flex;justify-content:center;-webkit-justify-content:center;-khtml-justify-content:center;-moz-justify-content:center;-o-justify-content:center;-ms-justify-content:center;align-items:center;width:48px;height:48px;padding:.85em 1.1em;border-radius:100px;-webkit-border-radius:100px;border:none;transition:all .28s ease;-webkit-transition:all .28s ease;-khtml-transition:all .28s ease;-moz-transition:all .28s ease;-o-transition:all .28s ease;-ms-transition:all .28s ease;color:#3dd9b6}.l_header .switcher>li>a:hover{border:none}.l_header .switcher>li>a.active,.l_header .switcher>li>a:active{border:none;background:var(--color-site-bg)}@media screen and (max-width:500px){.l_header .switcher>li>a{width:36px;height:48px}}.l_header .nav-sub .switcher{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;display:flex}.l_header .m_search{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;display:flex;height:64px;width:240px;transition:all .28s ease;-webkit-transition:all .28s ease;-khtml-transition:all .28s ease;-moz-transition:all .28s ease;-o-transition:all .28s ease;-ms-transition:all .28s ease}@media screen and (max-width:1024px){.l_header .m_search{width:44px;min-width:44px}.l_header .m_search input::placeholder{opacity:0;-webkit-opacity:0;-moz-opacity:0}.l_header .m_search:hover{width:240px}.l_header .m_search:hover input::placeholder{opacity:1;-webkit-opacity:1;-moz-opacity:1}}@media screen and (min-width:500px){.l_header .m_search:hover .input{width:100%}.l_header .m_search:hover .input::placeholder{opacity:1;-webkit-opacity:1;-moz-opacity:1}}@media screen and (max-width:500px){.l_header .m_search{min-width:0}.l_header .m_search input::placeholder{opacity:1;-webkit-opacity:1;-moz-opacity:1}}.l_header .m_search .form{position:relative;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;display:flex;width:100%;align-items:center}.l_header .m_search .icon{position:absolute;width:36px;left:5px;color:var(--color-meta)}@media screen and (max-width:500px){.l_header .m_search .icon{display:-webkit-box;display:-moz-box;display:none}}.l_header .m_search .input{display:-webkit-box;display:-moz-box;display:block;padding-top:8px;padding-bottom:8px;line-height:1.3;width:100%;color:var(--color-text);background:#fafafa;box-shadow:none;-webkit-box-shadow:none;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;padding-left:40px;font-size:.875rem;border-radius:8px;-webkit-border-radius:8px;border:none;transition:all .28s ease;-webkit-transition:all .28s ease;-khtml-transition:all .28s ease;-moz-transition:all .28s ease;-o-transition:all .28s ease;-ms-transition:all .28s ease}@media screen and (min-width:500px){.l_header .m_search .input:focus{box-shadow:0 4px 8px 0 rgba(0,0,0,.1);-webkit-box-shadow:0 4px 8px 0 rgba(0,0,0,.1)}}@media screen and (max-width:500px){.l_header .m_search .input{background:var(--color-block);padding-left:8px;border:none}.l_header .m_search .input:focus,.l_header .m_search .input:hover{border:none}}@media (max-width:500px){.l_header .m_search{left:0;width:0;overflow:hidden;position:absolute;background:#fff;transition:all .28s ease;-webkit-transition:all .28s ease;-khtml-transition:all .28s ease;-moz-transition:all .28s ease;-o-transition:all .28s ease;-ms-transition:all .28s ease}.l_header .m_search .input{border-radius:32px;-webkit-border-radius:32px;margin-left:16px;padding-left:16px}.l_header.z_search-open .m_search{width:100%}.l_header.z_search-open .m_search .input{width:calc(100% - 120px)}}ul.m-pc>li>a{color:inherit;border-bottom:2px solid transparent}ul.m-pc>li>a.active,ul.m-pc>li>a:active{border-bottom:2px solid #3dd9b6}ul.list-v li:hover>ul.list-v,ul.m-pc li:hover>ul.list-v{display:-webkit-box;display:-moz-box;display:block}ul.nav-list-h{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;display:flex;align-items:stretch}ul.nav-list-h>li{position:relative;justify-content:center;-webkit-justify-content:center;-khtml-justify-content:center;-moz-justify-content:center;-o-justify-content:center;-ms-justify-content:center;height:100%;line-height:2.4;border-radius:4px;-webkit-border-radius:4px}ul.nav-list-h>li>a{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-weight:600}ul.list-v{z-index:1;display:-webkit-box;display:-moz-box;display:none;position:absolute;background:var(--color-card);box-shadow:0 2px 4px 0 rgba(0,0,0,.08),0 4px 8px 0 rgba(0,0,0,.08),0 8px 16px 0 rgba(0,0,0,.08);-webkit-box-shadow:0 2px 4px 0 rgba(0,0,0,.08),0 4px 8px 0 rgba(0,0,0,.08),0 8px 16px 0 rgba(0,0,0,.08);margin-top:-6px;border-radius:4px;-webkit-border-radius:4px;padding:8px 0}ul.list-v.show{display:-webkit-box;display:-moz-box;display:block}ul.list-v hr{margin-top:8px;margin-bottom:8px}ul.list-v>li{white-space:nowrap;word-break:keep-all}ul.list-v>li.header{font-size:.78125rem;font-weight:700;line-height:2em;color:var(--color-meta);margin:8px 16px 4px}ul.list-v>li.header i{margin-right:8px}ul.list-v>li ul{margin-left:0;display:-webkit-box;display:-moz-box;display:none;margin-top:-40px}ul.list-v .aplayer-container{min-height:64px;padding:6px 16px}ul.list-v>li>a{transition:all .28s ease;-webkit-transition:all .28s ease;-khtml-transition:all .28s ease;-moz-transition:all .28s ease;-o-transition:all .28s ease;-ms-transition:all .28s ease;display:-webkit-box;display:-moz-box;display:block;color:var(--color-list);font-size:.875rem;font-weight:700;line-height:36px;padding:0 20px 0 16px;text-overflow:ellipsis;margin:0 4px;border-radius:4px;-webkit-border-radius:4px}@media screen and (max-width:1024px){ul.list-v>li>a{line-height:40px}}ul.list-v>li>a>i{margin-right:8px}ul.list-v>li>a.active,ul.list-v>li>a:active{color:var(--color-list-hl)}ul.list-v>li>a:hover{color:var(--color-list-hl);background:var(--color-site-bg)}.l_header .menu>ul>li>a{display:-webkit-box;display:-moz-box;display:block;padding:0 8px}.l_header .menu>ul>li>a>i{margin-right:4px}.l_header ul.nav-list-h>li{color:var(--color-list);line-height:64px}.l_header ul.nav-list-h>li>a{max-height:64px;overflow:hidden;color:inherit}.l_header ul.nav-list-h>li>a.active,.l_header ul.nav-list-h>li>a:active{color:#3dd9b6}.l_header ul.nav-list-h>li:hover>a{color:var(--color-list-hl)}.l_header ul.nav-list-h>li i.music{animation:rotate-effect 1.5s linear infinite;-webkit-animation:rotate-effect 1.5s linear infinite;-khtml-animation:rotate-effect 1.5s linear infinite;-moz-animation:rotate-effect 1.5s linear infinite;-o-animation:rotate-effect 1.5s linear infinite;-ms-animation:rotate-effect 1.5s linear infinite}@-moz-keyframes rotate-effect{0%{transform:rotate(0);-webkit-transform:rotate(0);-khtml-transform:rotate(0);-moz-transform:rotate(0);-o-transform:rotate(0);-ms-transform:rotate(0)}25%{transform:rotate(90deg);-webkit-transform:rotate(90deg);-khtml-transform:rotate(90deg);-moz-transform:rotate(90deg);-o-transform:rotate(90deg);-ms-transform:rotate(90deg)}50%{transform:rotate(180deg);-webkit-transform:rotate(180deg);-khtml-transform:rotate(180deg);-moz-transform:rotate(180deg);-o-transform:rotate(180deg);-ms-transform:rotate(180deg)}75%{transform:rotate(270deg);-webkit-transform:rotate(270deg);-khtml-transform:rotate(270deg);-moz-transform:rotate(270deg);-o-transform:rotate(270deg);-ms-transform:rotate(270deg)}100%{transform:rotate(360deg);-webkit-transform:rotate(360deg);-khtml-transform:rotate(360deg);-moz-transform:rotate(360deg);-o-transform:rotate(360deg);-ms-transform:rotate(360deg)}}@-webkit-keyframes rotate-effect{0%{transform:rotate(0);-webkit-transform:rotate(0);-khtml-transform:rotate(0);-moz-transform:rotate(0);-o-transform:rotate(0);-ms-transform:rotate(0)}25%{transform:rotate(90deg);-webkit-transform:rotate(90deg);-khtml-transform:rotate(90deg);-moz-transform:rotate(90deg);-o-transform:rotate(90deg);-ms-transform:rotate(90deg)}50%{transform:rotate(180deg);-webkit-transform:rotate(180deg);-khtml-transform:rotate(180deg);-moz-transform:rotate(180deg);-o-transform:rotate(180deg);-ms-transform:rotate(180deg)}75%{transform:rotate(270deg);-webkit-transform:rotate(270deg);-khtml-transform:rotate(270deg);-moz-transform:rotate(270deg);-o-transform:rotate(270deg);-ms-transform:rotate(270deg)}100%{transform:rotate(360deg);-webkit-transform:rotate(360deg);-khtml-transform:rotate(360deg);-moz-transform:rotate(360deg);-o-transform:rotate(360deg);-ms-transform:rotate(360deg)}}@-o-keyframes rotate-effect{0%{transform:rotate(0);-webkit-transform:rotate(0);-khtml-transform:rotate(0);-moz-transform:rotate(0);-o-transform:rotate(0);-ms-transform:rotate(0)}25%{transform:rotate(90deg);-webkit-transform:rotate(90deg);-khtml-transform:rotate(90deg);-moz-transform:rotate(90deg);-o-transform:rotate(90deg);-ms-transform:rotate(90deg)}50%{transform:rotate(180deg);-webkit-transform:rotate(180deg);-khtml-transform:rotate(180deg);-moz-transform:rotate(180deg);-o-transform:rotate(180deg);-ms-transform:rotate(180deg)}75%{transform:rotate(270deg);-webkit-transform:rotate(270deg);-khtml-transform:rotate(270deg);-moz-transform:rotate(270deg);-o-transform:rotate(270deg);-ms-transform:rotate(270deg)}100%{transform:rotate(360deg);-webkit-transform:rotate(360deg);-khtml-transform:rotate(360deg);-moz-transform:rotate(360deg);-o-transform:rotate(360deg);-ms-transform:rotate(360deg)}}@keyframes rotate-effect{0%{transform:rotate(0);-webkit-transform:rotate(0);-khtml-transform:rotate(0);-moz-transform:rotate(0);-o-transform:rotate(0);-ms-transform:rotate(0)}25%{transform:rotate(90deg);-webkit-transform:rotate(90deg);-khtml-transform:rotate(90deg);-moz-transform:rotate(90deg);-o-transform:rotate(90deg);-ms-transform:rotate(90deg)}50%{transform:rotate(180deg);-webkit-transform:rotate(180deg);-khtml-transform:rotate(180deg);-moz-transform:rotate(180deg);-o-transform:rotate(180deg);-ms-transform:rotate(180deg)}75%{transform:rotate(270deg);-webkit-transform:rotate(270deg);-khtml-transform:rotate(270deg);-moz-transform:rotate(270deg);-o-transform:rotate(270deg);-ms-transform:rotate(270deg)}100%{transform:rotate(360deg);-webkit-transform:rotate(360deg);-khtml-transform:rotate(360deg);-moz-transform:rotate(360deg);-o-transform:rotate(360deg);-ms-transform:rotate(360deg)}}.menu-phone li ul.list-v{right:calc(100% - .5 * 16px)}.menu-phone li ul.list-v ul{right:calc(100% - .5 * 16px)}#wrapper{max-width:1080px;margin:auto}@media screen and (min-width:2048px){#wrapper{max-width:55vw}}#wrapper .menu{-webkit-box-flex:1;-moz-box-flex:1;-webkit-flex:1 1;-ms-flex:1 1;flex:1 1;margin:0 16px 0 0}#wrapper .menu .list-v ul{left:calc(100% - .5 * 16px)}.menu-phone{display:-webkit-box;display:-moz-box;display:none;margin-top:16px;right:8px;transition:all .28s ease;-webkit-transition:all .28s ease;-khtml-transition:all .28s ease;-moz-transition:all .28s ease;-o-transition:all .28s ease;-ms-transition:all .28s ease}.menu-phone ul{right:calc(100% - .5 * 16px)}@media screen and (max-width:500px){.menu-phone{display:-webkit-box;display:-moz-box;display:block}}.l_header{max-width:65vw;left:calc((100% - 65vw) * .5);border-bottom-left-radius:8px;border-bottom-right-radius:8px}@media screen and (max-width:2048px){.l_header{max-width:1112px;left:calc((100% - 1112px) * .5)}}@media screen and (max-width:1112px){.l_header{left:0;border-radius:0;-webkit-border-radius:0;max-width:100%}}@media screen and (max-width:500px){.l_header .container{margin-left:0;margin-right:0}.l_header #wrapper .nav-main .title{padding-left:16px;padding-right:16px}.l_header #wrapper .nav-sub{width:100%}.l_header #wrapper .nav-sub .title{overflow-y:scroll;margin-top:2px;padding:8px 16px}.l_header #wrapper .switcher{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;display:flex;margin-right:8px}.l_header .menu{display:-webkit-box;display:-moz-box;display:none}}@media screen and (max-width:500px){.list-v li{max-width:270px}}#u-search{display:-webkit-box;display:-moz-box;display:none;position:fixed;top:0;left:0;width:100%;height:100%;padding:60px 20px;z-index:1001}@media screen and (max-width:680px){#u-search{padding:0}}@media screen and (prefers-color-scheme:dark) and (max-width:500px){.l_header .m_search{background:var(--color-site-bg)!important}}@media screen and (max-width:2048px){.l_header{left:0!important;border-radius:0!important;-webkit-border-radius:0!important;max-width:100%!important}}#l_main .article .headimg-div{display:-webkit-box;display:-moz-box;display:none}</style><link rel="stylesheet" href="/css/style.css" media="print" onload='this.media="all",this.onload=null'><noscript><link rel="stylesheet" href="/css/style.css"></noscript><script>let userColorScheme=localStorage.getItem("color-scheme")
+      if(userColorScheme){
+        document.documentElement.setAttribute("color-scheme", userColorScheme);
+      }</script><script>if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMode))
+    document.write(
+	'<style>'+
+		'html{'+
+			'overflow-x: hidden !important;'+
+			'overflow-y: hidden !important;'+
+		'}'+
+		'.kill-ie{'+
+			'text-align:center;'+
+			'height: 100%;'+
+			'margin-top: 15%;'+
+			'margin-bottom: 5500%;'+
+		'}'+
+    '.kill-t{'+
+      'font-size: 2rem;'+
+    '}'+
+    '.kill-c{'+
+      'font-size: 1.2rem;'+
+    '}'+
+		'#l_header,#l_body{'+
+			'display: none;'+
+		'}'+
+	'</style>'+
+    '<div class="kill-ie">'+
+        `<span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>`+
+        `<span class="kill-c">微软已经于2016年终止了对 Internet Explorer (IE) 10 及更早版本的支持，<br/>继续使用存在极大的安全隐患，请使用当代主流的浏览器进行访问。</span><br/>`+
+        `<a target="_blank" rel="noopener" href="https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/"><strong>了解详情 ></strong></a>`+
+    '</div>');</script><script>/************这个文件存放不需要重载的全局变量和全局函数*********/
+  window.volantis = {}; // volantis 全局变量
+  volantis.debug = "false"; // 调试模式
+  volantis.dom = {}; // 页面Dom see: /source/js/app.js etc.
+  /******************** volantis.dom.$ ********************************/
+  // 注：这里没有选择器，也没有forEach一次只处理一个dom，这里重新封装主题常用的dom方法，返回的是dom对象，对象包含了以下方法，同时保留dom的原生API
+  function volantisDom(ele) {
+    if (!ele) ele = document.createElement("div")
+    this.ele = ele;
+    // ==============================================================
+    this.ele.find = (c) => {
+      let q = this.ele.querySelector(c)
+      if (q)
+        return new volantisDom(q)
+    }
+    // ==============================================================
+    this.ele.hasClass = (c) => {
+      return this.ele.className.match(new RegExp('(\\s|^)' + c + '(\\s|$)'));
+    }
+    this.ele.addClass = (c) => {
+      this.ele.classList.add(c);
+      return this.ele
+    }
+    this.ele.removeClass = (c) => {
+      this.ele.classList.remove(c);
+      return this.ele
+    }
+    this.ele.toggleClass = (c) => {
+      if (this.ele.hasClass(c)) {
+        this.ele.removeClass(c)
+      } else {
+        this.ele.addClass(c)
+      }
+      return this.ele
+    }
+    // ==============================================================
+    this.ele.on = (c, f) => {
+      this.ele.addEventListener(c, f, false)
+      return this.ele
+    }
+    this.ele.click = (f, r) => {
+      this.ele.on("click", f, r)
+      return this.ele
+    }
+    this.ele.scroll = (f, r) => {
+      this.ele.on("scroll", f, r)
+      return this.ele
+    }
+    // ==============================================================
+    this.ele.html = (c) => {
+      // if(c=== undefined){
+      //   return this.ele.innerHTML
+      // }else{
+      this.ele.innerHTML = c
+      return this.ele
+      // }
+    }
+    // ==============================================================
+    this.ele.hide = (c) => {
+      this.ele.style.display = "none"
+      return this.ele
+    }
+    this.ele.show = (c) => {
+      this.ele.style.display = "block"
+      return this.ele
+    }
+    // ==============================================================
+    return this.ele
+  }
+  volantis.dom.$ = (ele) => {
+    return !!ele ? new volantisDom(ele) : null;
+  }
+  /******************** RunItem ********************************/
+  function RunItem() {
+    this.list = []; // 存放回调函数
+    this.start = () => {
+      for (var i = 0; i < this.list.length; i++) {
+        this.list[i].run();
+      }
+    };
+    this.push = (fn, name, setRequestAnimationFrame = true) => {
+      let myfn = fn
+      if (setRequestAnimationFrame) {
+        myfn = () => {
+          volantis.requestAnimationFrame(fn)
+        }
+      }
+      var f = new Item(myfn, name);
+      this.list.push(f);
+    };
+    this.remove = (name) => {
+      for (let index = 0; index < this.list.length; index++) {
+        const e = this.list[index];
+        if (e.name == name) {
+          this.list.splice(index, 1);
+        }
+      }
+    }
+    // 构造一个可以run的对象
+    function Item(fn, name) {
+      // 函数名称
+      this.name = name || fn.name;
+      // run方法
+      this.run = () => {
+        try {
+          fn()
+        } catch (error) {
+          console.log(error);
+        }
+      };
+    }
+  }
+  /******************** RightMenu ********************************/
+  // volantis.rightmenu.handle(callBack[,"callBackName"]) 外部菜单项控制
+  // 可在 volantis.mouseEvent 处获取右键事件
+  volantis.rightmenu = {};
+  volantis.rightmenu.method = {
+    handle: new RunItem(),
+  }
+  volantis.rightmenu = Object.assign(volantis.rightmenu, {
+    handle: volantis.rightmenu.method.handle.push,
+  });
+  /********************  Dark Mode  ********************************/
+  // /layout/_partial/scripts/darkmode.ejs
+  // volantis.dark.mode 当前模式 dark or light
+  // volantis.dark.toggle() 暗黑模式触发器
+  // volantis.dark.push(callBack[,"callBackName"]) 传入触发器回调函数
+  volantis.dark = {};
+  volantis.dark.method = {
+    toggle: new RunItem(),
+  };
+  volantis.dark = Object.assign(volantis.dark, {
+    push: volantis.dark.method.toggle.push,
+  });
+  /********************  Message  ********************************/
+  // VolantisApp.message
+  /********************  isMobile  ********************************/
+  // /source/js/app.js
+  // volantis.isMobile
+  // volantis.isMobileOld
+  /********************脚本动态加载函数********************************/
+  // volantis.js(src, cb)  cb 可以传入onload回调函数 或者 JSON对象 例如: volantis.js("src", ()=>{}) 或 volantis.js("src", {defer:true,onload:()=>{}})
+  // volantis.css(src)
+
+  // 返回Promise对象，如下方法同步加载资源，这利于处理文件资源之间的依赖关系，例如：APlayer 需要在 MetingJS 之前加载
+  // (async () => {
+  //     await volantis.js("...theme.plugins.aplayer.js.aplayer...")
+  //     await volantis.js("...theme.plugins.aplayer.js.meting...")
+  // })();
+
+  // 已经加入了setTimeout
+  volantis.js = (src, cb) => {
+    return new Promise(resolve => {
+      setTimeout(function () {
+        var HEAD = document.getElementsByTagName("head")[0] || document.documentElement;
+        var script = document.createElement("script");
+        script.setAttribute("type", "text/javascript");
+        if (cb) {
+          if (JSON.stringify(cb)) {
+            for (let p in cb) {
+              if (p == "onload") {
+                script[p] = () => {
+                  cb[p]()
+                  resolve()
+                }
+              } else {
+                script[p] = cb[p]
+                script.onload = resolve
+              }
+            }
+          } else {
+            script.onload = () => {
+              cb()
+              resolve()
+            };
+          }
+        } else {
+          script.onload = resolve
+        }
+        script.setAttribute("src", src);
+        HEAD.appendChild(script);
+      });
+    });
+  }
+  volantis.css = (src) => {
+    return new Promise(resolve => {
+      setTimeout(function () {
+        var link = document.createElement('link');
+        link.rel = "stylesheet";
+        link.href = src;
+        link.onload = resolve;
+        document.getElementsByTagName("head")[0].appendChild(link);
+      });
+    });
+  }
+  /********************按需加载的插件********************************/
+  // volantis.import.jQuery().then(()=>{})
+  volantis.import = {
+    jQuery: () => {
+      if (typeof jQuery == "undefined") {
+        return volantis.js("https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.min.js")
+      } else {
+        return new Promise(resolve => {
+          resolve()
+        });
+      }
+    }
+  }
+  /********************** requestAnimationFrame ********************************/
+  // 1、requestAnimationFrame 会把每一帧中的所有 DOM 操作集中起来，在一次重绘或回流中就完成，并且重绘或回流的时间间隔紧紧跟随浏览器的刷新频率，一般来说，这个频率为每秒60帧。
+  // 2、在隐藏或不可见的元素中，requestAnimationFrame 将不会进行重绘或回流，这当然就意味着更少的的 cpu，gpu 和内存使用量。
+  volantis.requestAnimationFrame = (fn) => {
+    if (!window.requestAnimationFrame) {
+      window.requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame;
+    }
+    window.requestAnimationFrame(fn)
+  }
+  /************************ layoutHelper *****************************************/
+  volantis.layoutHelper = (helper, html, opt) => {
+    opt = Object.assign({ clean: false}, opt)
+    function myhelper(helper, html, clean) {
+      volantis.tempDiv = document.createElement("div");
+      volantis.tempDiv.innerHTML = html;
+      let layoutHelper = document.querySelector("#layoutHelper-" + helper)
+      if (layoutHelper) {
+        if (clean) {
+          layoutHelper.innerHTML = ""
+        }
+        layoutHelper.append(volantis.tempDiv);
+      }
+    }
+    myhelper(helper, html, opt.clean)
+  }
+  /****************************** 滚动事件处理 ****************************************/
+  volantis.scroll = {
+    engine: new RunItem(),
+    unengine: new RunItem(),
+  };
+  volantis.scroll = Object.assign(volantis.scroll, {
+    push: volantis.scroll.engine.push,
+  });
+  // 滚动条距离顶部的距离
+  volantis.scroll.getScrollTop = () => {
+    let scrollPos;
+    if (window.pageYOffset) {
+      scrollPos = window.pageYOffset;
+    } else if (document.compatMode && document.compatMode != 'BackCompat') {
+      scrollPos = document.documentElement.scrollTop;
+    } else if (document.body) {
+      scrollPos = document.body.scrollTop;
+    }
+    return scrollPos;
+  }
+  volantis.scroll.scrollHeight = function () {
+    return Math.max(
+      document.body.scrollHeight,
+      document.documentElement.scrollHeight,
+    )
+  }
+  volantis.scroll.offsetHeight = function () {
+    return Math.max(
+      document.body.offsetHeight,
+      document.documentElement.offsetHeight,
+      document.body.clientHeight,
+      document.documentElement.clientHeight
+    )
+  }
+  volantis.scroll.progress = function () {
+    return volantis.scroll.getScrollTop() / (volantis.scroll.scrollHeight() - volantis.scroll.offsetHeight())
+  }
+  // 使用 requestAnimationFrame 处理滚动事件
+  // `volantis.scroll.del` 中存储了一个数值, 该数值检测一定时间间隔内滚动条滚动的位移, 数值的检测频率是浏览器的刷新频率. 数值为正数时, 表示向下滚动. 数值为负数时, 表示向上滚动.
+  volantis.scroll.handleScrollEvents = () => {
+    volantis.scroll.lastScrollTop = volantis.scroll.getScrollTop()
+    function loop() {
+      const scrollTop = volantis.scroll.getScrollTop();
+      if (volantis.scroll.lastScrollTop !== scrollTop) {
+        volantis.scroll.del = scrollTop - volantis.scroll.lastScrollTop;
+        volantis.scroll.lastScrollTop = scrollTop;
+        // if (volantis.scroll.del > 0) {
+        //   console.log("向下滚动");
+        // } else {
+        //   console.log("向上滚动");
+        // }
+        // 注销过期的unengine未滚动事件
+        volantis.scroll.unengine.list = []
+        volantis.scroll.engine.start();
+      } else {
+        volantis.scroll.unengine.start();
+      }
+      volantis.requestAnimationFrame(loop)
+    }
+    volantis.requestAnimationFrame(loop)
+  }
+  volantis.scroll.handleScrollEvents()
+  volantis.scroll.ele = null;
+  // 触发页面滚动至目标元素位置
+  volantis.scroll.to = (ele, option = {}) => {
+    if (!ele) return;
+    volantis.scroll.ele = ele;
+    // 默认配置
+    opt = {
+      top: ele.getBoundingClientRect().top + document.documentElement.scrollTop,
+      behavior: "smooth"
+    }
+    // 定义配置
+    if ("top" in option) {
+      opt.top = option.top
+    }
+    if ("behavior" in option) {
+      opt.behavior = option.behavior
+    }
+    if ("addTop" in option) {
+      opt.top += option.addTop
+    }
+    if (!("observerDic" in option)) {
+      option.observerDic = 100
+    }
+    // 滚动
+    window.scrollTo(opt);
+    // 监视器
+    // 监视并矫正元素滚动到指定位置
+    // 用于处理 lazyload 引起的 cls 导致的定位失败问题
+    // option.observer = false
+    if (option.observer) {
+      setTimeout(() => {
+        if (volantis.scroll.ele != ele) {
+          return
+        }
+        volantis.scroll.unengine.push(() => {
+          let me = ele.getBoundingClientRect().top
+          if (!(me >= -option.observerDic && me <= option.observerDic)) {
+            volantis.scroll.to(ele, option)
+          }
+          volantis.scroll.unengine.remove("unengineObserver")
+        }, "unengineObserver")
+      }, 1000)
+    }
+  }
+  /********************** Content Visibility ********************************/
+  // 见 source/css/first.styl 如果遇到任何问题 删除 .post-story 即可
+  // 一个元素被声明 content-visibility 属性后 如果元素不在 viewport 中 浏览器不会计算其后代元素样式和属性 从而节省 Style & Layout 耗时
+  // content-visibility 的副作用: 锚点失效 等等(实验初期 暂不明确), 使用此方法清除样式
+  volantis.cleanContentVisibility = () => {
+    if (document.querySelector(".post-story")) {
+      console.log("cleanContentVisibility");
+      document.querySelectorAll(".post-story").forEach(e => {
+        e.classList.remove("post-story")
+      })
+    }
+  }
+  /******************************************************************************/
+  /******************************************************************************/
+  /******************************************************************************/
+  //图像加载出错时的处理
+  function errorImgAvatar(img) {
+    img.src = "https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg";
+    img.onerror = null;
+  }
+  function errorImgCover(img) {
+    img.src = "https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg";
+    img.onerror = null;
+  }
+  /******************************************************************************/</script><script>window.pdata={},pdata.ispage=!0,pdata.commentPath="",pdata.commentPlaceholder="",pdata.commentConfig={},volantis.GLOBAL_CONFIG={root:"/",debug:!1,default:{avatar:"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg",link:"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg",cover:"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg",image:"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},lastupdate:new Date(1725713738143),cdn:{izitoast_css:"https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css",izitoast_js:"https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js",fancybox_css:"https://cdn.bootcdn.net/ajax/libs/fancyapps-ui/5.0.33/fancybox/fancybox.min.css",fancybox_js:"https://cdn.bootcdn.net/ajax/libs/fancyapps-ui/5.0.33/fancybox/fancybox.umd.min.js"},sidebar:{for_page:["lastupdate","notice","tagcloud","webinfo"],for_post:["toc"],webinfo:{lastupd:{enable:!0,friendlyShow:!0},runtime:{data:"2021/01/09",unit:"天"}}},plugins:{message:{enable:!0,icon:{default:"fa-solid fa-info-circle light-blue",quection:"fa-solid fa-question-circle light-blue"},time:{default:5e3,quection:2e4},position:"topRight",transitionIn:"bounceInLeft",transitionOut:"fadeOutRight",titleColor:"var(--color-text)",messageColor:"var(--color-text)",backgroundColor:"var(--color-card)",zindex:2147483647,copyright:{enable:!1,title:"知识共享许可协议",message:"请遵守 CC BY-NC-SA 4.0 协议。",icon:"far fa-copyright light-blue"},aplayer:{enable:!0,play:"fa-solid fa-play",pause:"fa-solid fa-pause"},rightmenu:{enable:!0,notice:!0},css:"https://unpkg.com/volantis-static@0.0.1660614606622/libs/izitoast/dist/css/iziToast.min.css",js:"https://unpkg.com/volantis-static@0.0.1660614606622/libs/izitoast/dist/js/iziToast.min.js"},aplayer:{id:6608242431,enable:!0}},search:{dataPath:("/".endsWith("/")?"/":"//")+"content.json"},languages:{search:{hits_empty:"找不到您查询的内容：${query}",hits_stats:"找到 ${hits} 条结果，用时 ${time} 毫秒"}}}</script></head><body itemscope itemtype="https://schema.org.cn/WebPage"><header itemscope itemtype="https://schema.org.cn/WPHeader" id="l_header" class="l_header always shadow floatable blur"><div class="container"><div id="wrapper"><div class="nav-sub"><p class="title"></p><ul class="switcher nav-list-h m-phone"><li><a id="s-comment" class="fa-solid fa-comments fa-fw" target="_self" title="comment"></a></li><li><a id="s-toc" class="s-toc fa-solid fa-list fa-fw" target="_self" title="toc"></a></li></ul></div><div class="nav-main"><a class="title flat-box" target="_self" href="/"><img no-lazy class="logo" src="/favicon.ico"></a><div class="menu navigation"><ul class="nav-list-h m-pc"><li><a class="menuitem flat-box faa-parent animated-hover" title="科A作品"><i class="fa-solid fa-head-side-brain fa-fw"></i>科A作品</a><ul class="list-v"><li><a class="menuitem flat-box faa-parent animated-hover" href="/categories/%E6%B7%B7%E6%B2%8C%E4%B9%8B%E8%84%91/" title="混沌之脑" active-action="action-categoriesE6B7B7E6B28CE4B98BE88491"><i class="fa-solid fa-mind-share fa-fw"></i>混沌之脑</a></li><li><a class="menuitem flat-box faa-parent animated-hover" href="/categories/%E5%91%BD%E8%BF%90%E7%9F%B3%E4%B9%8B%E9%97%A8/" title="命运石之门" active-action="action-categoriesE591BDE8BF90E79FB3E4B98BE997A8"><i class="fa-solid fa-cog fa-fw"></i>命运石之门</a></li><li><a class="menuitem flat-box faa-parent animated-hover" href="/categories/%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%AC%94%E8%AE%B0/" title="机器人笔记" active-action="action-categoriesE69CBAE599A8E4BABAE7AC94E8AEB0"><i class="fa-solid fa-robot fa-fw"></i>机器人笔记</a></li><li><a class="menuitem flat-box faa-parent animated-hover" href="/categories/%E6%B7%B7%E6%B2%8C%E4%B9%8B%E5%AD%90/" title="混沌之子" active-action="action-categoriesE6B7B7E6B28CE4B98BE5AD90"><i class="fa-solid fa-eye fa-fw"></i>混沌之子</a></li><li><a class="menuitem flat-box faa-parent animated-hover" href="/categories/%E8%B6%85%E8%87%AA%E7%84%B69%E4%BA%BA%E7%BB%84/" title="超自然9人组" active-action="action-categoriesE8B685E887AAE784B69E4BABAE7BB84"><i class="fa-solid fa-star-of-david fa-fw"></i>超自然9人组</a></li><li><a class="menuitem flat-box faa-parent animated-hover" target="_blank" rel="noopener" href="https://unpkg.com/sciadvfiles@1.1.3/other/pigeon.webp" title="匿名代码" active-action="action-https:unpkgcomsciadvfiles@113otherpigeonwebp"><i class="fa-solid fa-code fa-fw"></i>匿名代码</a></li></ul></li><li><a class="menuitem flat-box faa-parent animated-hover" href="/about/" title="关于本站" active-action="action-about"><i class="fa-solid fa-info fa-fw"></i>关于本站</a></li><li><a class="menuitem flat-box faa-parent animated-hover" href="https://drive.sci-adv.cc/" title="科A资源站" target="_blank" active-action="action-https:drivesci-advcc"><i class="fa-solid fa-server fa-bounce fa-fw"></i>科A资源站</a></li><li><a class="menuitem flat-box faa-parent animated-hover" href="https://travellings.link" title="开往" target="_blank" active-action="action-https:travellingslink"><i class="fa-solid fa-subway fa-fw"></i>开往</a></li><li><a class="menuitem flat-box faa-parent animated-hover" title="更多"><i class="fa-solid fa-ellipsis-v fa-fw"></i>更多</a><ul class="list-v"><li><a class="menuitem flat-box header toggle-mode-btn"><i class="fa-solid fa-moon fa-fw"></i>夜间模式</a></li><li></li><li><a class="menuitem flat-box faa-parent animated-hover" href="https://github.com/MCSeekeri/sciadv" title="本站源代码" target="_blank" active-action="action-https:githubcomMCSeekerisciadv"><i class="fa-solid fa-code fa-fw"></i>本站源代码</a></li><hr><li><a class="menuitem flat-box faa-parent animated-hover" href="https://sci-adv.cc/wiki/%E9%A6%96%E9%A1%B5" title="科学ADV中文Wiki" target="_blank" active-action="action-https:sci-advccwikiE9A696E9A1B5"><i class="fa-solid fa-book fa-fw"></i>科学ADV中文Wiki</a></li><li><a class="menuitem flat-box faa-parent animated-hover" href="https://shimo.im/docs/XjCxcDkPxQwQXXXy/" title="devil的CD整理" target="_blank" active-action="action-https:shimoimdocsXjCxcDkPxQwQXXXy"><i class="fa-solid fa-compact-disc fa-fw"></i>devil的CD整理</a></li><li><a class="menuitem flat-box faa-parent animated-hover" href="https://space.bilibili.com/7348022/" title="未来同人研究所" target="_blank" active-action="action-https:spacebilibilicom7348022"><i class="fa-solid fa-user-edit fa-fw"></i>未来同人研究所</a></li><li><a class="menuitem flat-box faa-parent animated-hover" href="https://aka.sci-adv.cc" title="科A短链接服务" target="_blank" active-action="action-https:akasci-advcc"><i class="fa-solid fa-link fa-fw"></i>科A短链接服务</a></li></ul></li></ul></div><div class="m_search"><form name="searchform" class="form u-search-form"><i class="icon fa-solid fa-search fa-fw"></i> <input type="text" class="input u-search-input" placeholder="Search..."></form></div><ul class="switcher nav-list-h m-phone"><li><a class="s-search fa-solid fa-search fa-fw" target="_self" title="search"></a></li><li><a class="s-menu fa-solid fa-bars fa-fw" target="_self" title="menu"></a><ul class="menu-phone list-v navigation white-box"><li><a class="menuitem flat-box faa-parent animated-hover" title="科A作品"><i class="fa-solid fa-head-side-brain fa-fw"></i>科A作品</a><ul class="list-v"><li><a class="menuitem flat-box faa-parent animated-hover" href="/categories/%E6%B7%B7%E6%B2%8C%E4%B9%8B%E8%84%91/" title="混沌之脑" active-action="action-categoriesE6B7B7E6B28CE4B98BE88491"><i class="fa-solid fa-mind-share fa-fw"></i>混沌之脑</a></li><li><a class="menuitem flat-box faa-parent animated-hover" href="/categories/%E5%91%BD%E8%BF%90%E7%9F%B3%E4%B9%8B%E9%97%A8/" title="命运石之门" active-action="action-categoriesE591BDE8BF90E79FB3E4B98BE997A8"><i class="fa-solid fa-cog fa-fw"></i>命运石之门</a></li><li><a class="menuitem flat-box faa-parent animated-hover" href="/categories/%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%AC%94%E8%AE%B0/" title="机器人笔记" active-action="action-categoriesE69CBAE599A8E4BABAE7AC94E8AEB0"><i class="fa-solid fa-robot fa-fw"></i>机器人笔记</a></li><li><a class="menuitem flat-box faa-parent animated-hover" href="/categories/%E6%B7%B7%E6%B2%8C%E4%B9%8B%E5%AD%90/" title="混沌之子" active-action="action-categoriesE6B7B7E6B28CE4B98BE5AD90"><i class="fa-solid fa-eye fa-fw"></i>混沌之子</a></li><li><a class="menuitem flat-box faa-parent animated-hover" href="/categories/%E8%B6%85%E8%87%AA%E7%84%B69%E4%BA%BA%E7%BB%84/" title="超自然9人组" active-action="action-categoriesE8B685E887AAE784B69E4BABAE7BB84"><i class="fa-solid fa-star-of-david fa-fw"></i>超自然9人组</a></li><li><a class="menuitem flat-box faa-parent animated-hover" target="_blank" rel="noopener" href="https://unpkg.com/sciadvfiles@1.1.3/other/pigeon.webp" title="匿名代码" active-action="action-https:unpkgcomsciadvfiles@113otherpigeonwebp"><i class="fa-solid fa-code fa-fw"></i>匿名代码</a></li></ul></li><li><a class="menuitem flat-box faa-parent animated-hover" href="/about/" title="关于本站" active-action="action-about"><i class="fa-solid fa-info fa-fw"></i>关于本站</a></li><li><a class="menuitem flat-box faa-parent animated-hover" href="https://drive.sci-adv.cc/" title="科A资源站" target="_blank" active-action="action-https:drivesci-advcc"><i class="fa-solid fa-server fa-bounce fa-fw"></i>科A资源站</a></li><li><a class="menuitem flat-box faa-parent animated-hover" href="https://travellings.link" title="开往" target="_blank" active-action="action-https:travellingslink"><i class="fa-solid fa-subway fa-fw"></i>开往</a></li><li><a class="menuitem flat-box faa-parent animated-hover" title="更多"><i class="fa-solid fa-ellipsis-v fa-fw"></i>更多</a><ul class="list-v"><li><a class="menuitem flat-box header toggle-mode-btn"><i class="fa-solid fa-moon fa-fw"></i>夜间模式</a></li><li></li><li><a class="menuitem flat-box faa-parent animated-hover" href="https://github.com/MCSeekeri/sciadv" title="本站源代码" target="_blank" active-action="action-https:githubcomMCSeekerisciadv"><i class="fa-solid fa-code fa-fw"></i>本站源代码</a></li><hr><li><a class="menuitem flat-box faa-parent animated-hover" href="https://sci-adv.cc/wiki/%E9%A6%96%E9%A1%B5" title="科学ADV中文Wiki" target="_blank" active-action="action-https:sci-advccwikiE9A696E9A1B5"><i class="fa-solid fa-book fa-fw"></i>科学ADV中文Wiki</a></li><li><a class="menuitem flat-box faa-parent animated-hover" href="https://shimo.im/docs/XjCxcDkPxQwQXXXy/" title="devil的CD整理" target="_blank" active-action="action-https:shimoimdocsXjCxcDkPxQwQXXXy"><i class="fa-solid fa-compact-disc fa-fw"></i>devil的CD整理</a></li><li><a class="menuitem flat-box faa-parent animated-hover" href="https://space.bilibili.com/7348022/" title="未来同人研究所" target="_blank" active-action="action-https:spacebilibilicom7348022"><i class="fa-solid fa-user-edit fa-fw"></i>未来同人研究所</a></li><li><a class="menuitem flat-box faa-parent animated-hover" href="https://aka.sci-adv.cc" title="科A短链接服务" target="_blank" active-action="action-https:akasci-advcc"><i class="fa-solid fa-link fa-fw"></i>科A短链接服务</a></li></ul></li></ul></li></ul></div></div></div></header><div id="l_body"><div id="l_cover"><div class="cover-wrapper post dock" id="half"><div class="cover-bg lazyload placeholder" data-bg="https://unpkg.com/mcseekeri@1.2.6/img/cover/cover6.webp"></div><div class="cover-body"><div class="top"></div><div class="bottom"><div class="menu navigation"><div class="list-h"><a href="/archives/" active-action="action-archives"><i class="fa-solid fa-archive fa-fw"></i><p>归档</p></a><a href="/tags/%E5%B0%8F%E8%AF%B4/" active-action="action-tagsE5B08FE8AFB4"><i class="fa-solid fa-file-alt fa-fw"></i><p>小说</p></a><a href="/tags/%E5%90%8C%E4%BA%BA/" active-action="action-tagsE5908CE4BABA"><i class="fa-solid fa-user-edit fa-fw"></i><p>同人</p></a><a href="/tags/%E8%AE%A8%E8%AE%BA%E6%8E%A2%E7%A9%B6/" active-action="action-tagsE8AEA8E8AEBAE68EA2E7A9B6"><i class="fa-solid fa-books fa-fw"></i><p>石学</p></a><a href="/about/" active-action="action-about"><i class="fa-solid fa-user-circle fa-fw"></i><p>关于</p></a></div></div></div></div></div></div><div id="safearea"><div class="body-wrapper"><div id="l_main" class=""><article itemscope itemtype="https://schema.org.cn/Article" class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost"><link itemprop="mainEntityOfPage" href="https://lib.sci-adv.cc/archives/ff129072/"><span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization"><meta itemprop="name" content="科学ADV图书馆"></span><span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post"><meta itemprop="name" content="科学ADV图书馆"><meta itemprop="description" content="本站致力于科学 ADV 作品(命运石之门 混沌之脑 机器人笔记 匿名代码等)小说漫画相关内容收集"></span><div class="headimg-div"><a class="headimg-a"><img itemprop="image" class="headimg" src="https://unpkg.com/sciadvfiles@1.1.3/other/QA.webp"></a></div><div class="article-meta" id="top"><a title="S;G:负荷领域的既视感 QA 手册" href="/archives/ff129072/"><img itemprop="image" class="thumbnail" src="https://unpkg.com/mcseekeri@1.2.3/cog.svg"></a><h1 class="title" itemprop="name headline">S;G:负荷领域的既视感 QA 手册</h1><div class="new-meta-box"><div class="new-meta-item author" itemprop="author" itemscope itemtype="https://schema.org.cn/Person"><a itemprop="url" class="author" target="_blank" href="https://space.bilibili.com/917784" rel="nofollow noopener"><img itemprop="image" src="https://unpkg.com/mcseekeri@1.2.9/avatar/反物质委员会.webp"><p itemprop="name">反物质委员会</p></a></div><div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E8%AE%BE%E5%AE%9A/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>设定</p></a></div><div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E8%AE%A8%E8%AE%BA%E6%8E%A2%E7%A9%B6/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>讨论探究</p></a></div><span hidden itemprop="keywords">设定 讨论探究</span><div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2021-08-10T04:51:00+00:00"><a class="notlink"><i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i><p>发布于：2021年8月10日</p></a></div><div class="new-meta-item wordcount"><a class="notlink"><i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i><p>字数：9.4k 字</p></a></div><div class="new-meta-item readtime"><a class="notlink"><i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i><p>时长：32 分钟</p></a></div><div class="new-meta-item comments-count"><a href="/archives/ff129072/#comments"><i class="fa-solid fa-comment-dots fa-fw"></i><p><span data-path="/archives/ff129072/" class="waline-comment-count"><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i> </span><span class="leancloud-comments-count">&nbsp;条评论</span></p></a></div></div></div><div id="layoutHelper-page-plugins"></div><div id="post-body" itemprop="articleBody"><h2 id="前言"><strong>前言</strong></h2><p>为了造福广大石学萌新，经过三年的沉寂之后，我们<strong>反物质委员会</strong>终于重启了命运石之门剧场版《负荷领域的既视感》的 QA 项目。</p><p>我们通过各种渠道收集反馈，为大家整理出了剧情中几乎所有的疑难问题，并依据原作文本和官方设定，对这些问题给出了足够准确的解答。</p><p>我们相信通过这本剧场版 QA 手册，一定能消除大家对剧场版的误解，让大家对《负荷领域的既视感》的设定与逻辑有更加深入、客观的认识。</p><h4 id="特别声明">特别声明</h4><div class="note info"><p>本 QA 手册不代表 MAGES.官方观点，所有分析、结论均为组内讨论达成一致的结果，如有疑问，欢迎留言或<strong>加群</strong>共同研究。</p></div><h4 id="特别提醒">特别提醒</h4><div class="note info"><p>本 QA 仅面向<strong>一周目以上</strong>观众，在阅读前请确保至少看完命运石之门<strong>本篇 24 话</strong>+<strong>OVA 以及剧场版</strong>《负荷领域的既视感》。</p></div><h4 id="特别感谢">特别感谢</h4><blockquote><p>感谢：</p><p><strong>古晟天</strong><img no-lazy class="inline" src="https://unpkg.com/mcseekeri@1.2.7/avatar/古晟天.jpg" style="height:30px">、<strong>刈屋美纱希</strong><img no-lazy class="inline" src="https://unpkg.com/mcseekeri@1.2.6/avatar/Kariya_Misaki.jpg" style="height:30px">、<strong>某疯狂的科学家</strong><img no-lazy class="inline" src="https://unpkg.com/mcseekeri@1.3.0/avatar/%E6%9F%90%E7%96%AF%E7%8B%82%E7%9A%84%E7%A7%91%E5%AD%A6%E5%AE%B6.webp" style="height:30px"> 将剧场版小说（上/下) 全部内容翻译完成。</p><p>感谢：</p><p><strong>天光逸</strong><img no-lazy class="inline" src="https://unpkg.com/mcseekeri@1.2.6/avatar/tgy.jpg" style="height:30px">、<strong>可爱的 serika</strong><img no-lazy class="inline" src="https://unpkg.com/mcseekeri@1.2.6/avatar/serika.jpg" style="height:30px"><sub>（贴吧 ID:<strong>尾上世莉架</strong>)</sub> 给予的<strong>理论支持</strong>。</p></blockquote><hr><h2 id="PartⅠ-设定解析">PartⅠ <strong>设定解析</strong></h2><h3 id="记忆"><strong>记忆</strong></h3><p>（人类的）记忆是一种抽象的概念，是一种基本的心理过程。</p><p>主观上来说，记忆是客观事实经过某人主观地观测而得出来的情报，大脑会为了使某人接受而去自动对照情报的前后因果关系。</p><hr><h3 id="短期记忆与长期记忆"><strong>短期记忆与长期记忆</strong></h3><p>当五官感知外界时，会向海马体发送信号，海马体将信号统筹形成短期记忆。</p><p>短期记忆一般能持续数十秒到数分。</p><p>而经海马体整理和筛选之后储存到侧头叶上的情报，就是长期记忆。</p><hr><h3 id="回忆与联想"><strong>回忆与联想</strong></h3><p>在五官感知外界时，会向海马体发送信号，海马体会检索侧头叶上已经形成的<emp>长期记忆</emp>，读取情报，让人意识到这是记忆中的事。这一“意识到”的行为称为回忆。</p><p>联想则是在海马体收到视听信号开始检索侧头叶上所储存的长期记忆时，由于发生了错误，海马体将过去类似的场景检索出来了，回忆起了当时的事情。</p><hr><h3 id="观测"><strong>观测</strong></h3><p>观测是指观测者（通常指人）通过五官感知客观的外界信息以刺激海马体，使得海马体在侧头叶内的已有信息中进行检索，从而主观地认定或放弃某一因果关系的过程。</p><p>观测与回忆的概念略有重合，但<strong>观测强调的是回忆这一行为发生的客观过程</strong>，<strong>而回忆则是人的主观行为</strong>。</p><hr><h3 id="客观时系列与主观时系列"><strong>客观时系列与主观时系列</strong></h3><p><strong>客观时系列</strong>：关于当前世界线上何时发生何事，以及世界线自身变动的记录，就像是自动生成的、高视点的<emp>历史年表</emp>一样。</p><p><strong>主观时系列</strong>：大脑在面对客观时系列时，会不自觉地追寻因果关系并进行主观的记录和整理，由此形成的个人记忆，就是主观时系列。</p><p>客观时系列和主观时系列的关键区别在于，<strong>主观时系列依附于肉体</strong>，即人类大脑的相应功能，而<strong>客观时系列与肉体无关</strong>，存在于“别的什么地方”。</p><hr><h3 id="未视感"><strong>未视感</strong></h3><p>在海马体接收到视听信号，并开始检索侧头叶上所储存的长期记忆时，由于发生了错误，导致海马体在检索过程中没能检索到本应该有的长期记忆，于是原本应该很熟悉的事物看起来很陌生。</p><hr><h3 id="既视感"><strong>既视感</strong></h3><p><strong>关于当前世界线</strong>：在海马体接收到视听信号，并开始检索侧头叶上所储存的长期记忆时，由于发生了错误，海马体将过去类似的场景检索出来了，但因为场景太过琐碎不能形成因果关系，人们只能模糊地认识到“以前是不是在什么地方遇到过”。</p><p><strong>关于世界线变动</strong>：侧头叶上储存的长期记忆在世界线变动的过程中被替换了，但是依然有残缺的拼图没能被彻底删除。在接收到视听信号开始检索侧头叶上所储存的长期记忆时，海马体检索到了这些拼图碎片，但同样因为场景太过琐碎不能形成因果关系，人们只能模糊地认识到“以前是不是在什么地方遇到过”。</p><hr><h3 id="普通人在世界线变动过程中的记忆变化"><strong>普通人在世界线变动过程中的记忆变化</strong></h3><p>由于时间机器会导致因果关系的断层，所以世界需要重构来对因果进行调整。</p><p>与此同时，储存在人们侧头叶里的记忆也会基于大脑的自我保护机制进行自我调节，用以配对新世界线上情报的逻辑构成。人们的记忆合乎当前世界线上的逻辑，于是他们主观上会接受新世界线的情报而排斥脑内残存的零碎的旧世界线情报。</p><hr><h3 id="新型脑炎-sub-出现在《命运石之门-0》中-sub"><strong>新型脑炎</strong><sub><em>出现在</em>《<em>命运石之门</em> <em>0</em>》<em>中</em></sub></h3><p>世界线变化后，有一部分人产生了经历过“另一种生活”的隐约的记忆。</p><p>这是由于新型脑炎患者的侧头叶自我调节功能弱于正常人，导致了新世界线的情报没能完全替换掉旧世界线的情报，于是在新世界线上海马体接收到外界视听信号开始检索侧头叶的情报的时候，由于发生了错误，海马体将这些类似的未被替换掉的旧世界线情报检索出来了。</p><p>由于新型脑炎患者拥有较多且完整的旧世界线情报，他们的大脑会对这些情报按照因果关系进行整理，于是患者就将这些情报视为自己的记忆，保存了下来。</p><hr><h3 id="Reading-Steiner-的过程"><strong>Reading Steiner 的过程</strong></h3><p>从一条世界线变化至另一条世界线的过程中，冈部伦太郎感受到头痛的同时产生<strong>记忆的断层</strong>。</p><p>这是由于冈部的大脑有缺陷，侧头叶无法进行自我调节，于是在世界线变化的过程中，其记忆并未随着历史的重构而重构，而是保留了旧世界线的情报，没能获取到新世界线的情报。</p><hr><h3 id="R-世界线"><strong>R 世界线</strong></h3><p>未来的牧濑红莉栖针对冈部伦太郎消失的现象所提出的一种<strong>假说</strong>，其变动率不详。</p><p>未来的牧濑红莉栖暂且将其设定为相对命运石之门世界线偏离了 0.000001%。</p><p>其中<strong>R</strong>代表<code>Revers</code> ，取自“<strong>S</strong>”（Steins;Gate）的旁边，既代表 R 世界线为命运石之门世界线的“负”、“反面”，又代表其与命运石之门世界线成对，呈现出类似<strong>双重螺旋的伴生结构</strong>。</p><div class="note info"><p>注：Part II 部分的<a href="#Q10"><strong>Q10</strong></a>将详细解释 R 世界线的性质，以及该设定对命运石之门的世界观而言有怎样的意义，当前部分的解析仅为小说中铃羽的描述</p></div><hr><h3 id="记忆空间"><strong>记忆空间</strong></h3><p>民间提出的一种对命运石之门世界观的设想。</p><p>在（物理性的）世界之外，存在一种<strong>特殊的领域</strong>，即存储了大量可能性世界的“回收站”，具体可能包含全部的可能性世界，也可能只包含与当前运行的世界线有联系的狭小范围。</p><p>这一领域与人的大脑中存储记忆的区域直接相连。世界线发生变动时，人的记忆会根据因果关系进行重构，而重构就是大脑中旧世界线的记忆与记忆空间中新世界线的记忆发生替换的过程。</p><p>在官方衍生小说<span class="p blue">命运石之门 3 境界面上的 Steins;Gate: Rebirth</span>中曾有类似的<strong>描述</strong>|<sub>由贴吧吧友 qq223344qqq 翻译</sub></p><blockquote><p>“即便是冈部的大脑，在发生世界线变动的时候，肯定也是经过了替换这一过程的才对。但是冈部却保持了变动前的记忆。……不如说，在来到新世界线的时候，记忆没有被替换。也就是说记忆领域，在大脑的外部。</p><p>说不定在外部有着一个类似电脑系统备份系统似的东西，现阶段也只能这么想。可是只要世界线的变动会波及到所有纯物理的事象，而且那个备份系统也在世界线的内侧的话，那个它也难逃因世界线变动而带来的改写。</p></blockquote><p><strong>既然如此</strong>，<strong>经过世界线变动</strong>，<strong>仍能保持记忆的记忆领域</strong>，<strong>就变成了存在于世界之外的东西</strong>。至少可以确定，一定不会是物理性的数据资料。”</p><div class="note info"><p>注：尽管官方在衍生物中对记忆空间这一设定给出了足够多的暗示，但记忆空间目前依旧只是<strong>民间</strong>用于解释 R 世界线性质的一种方式，而非官方明确在作品或设定集里给出的标准答案。具体以官方的后续更新为准</p></div><hr><h2 id="Part-Ⅱ-Questions-Answers">Part Ⅱ <strong>Questions &amp; Answers</strong></h2><h3 id="1-剧场版算是官方的正统续作吗？">1.<strong>剧场版算是官方的正统续作吗</strong>？</h3><p>剧场版是官方的正统续作。</p><p>其中<strong>R 世界线</strong>等设定对命运石之门的世界观起到了关键的填充作用，并非像流传的谣言：“剧场版不严谨，只是图一乐”、“剧场版毁了本篇”、“剧场版就是本篇的官方同人”所说的那样。</p><h3 id="2-剧场版小说与剧场版动画有什么联系？">2.<strong>剧场版小说与剧场版动画有什么联系</strong>？</h3><p>剧场版小说将命运石之门本篇 OVA 及剧场版动画进行了结合，更加完整且详细地讲述了冈部伦太郎到达命运石之门世界线之后一年内的故事。</p><p>其中对 R 世界线等设定的补充比起剧场版动画中的描述更加详细也更为准确，是命运石之门衍生作品中<strong>必读的一部</strong>。</p><h3 id="3-阿万音铃羽为什么会带着和桥田至很像的帽子？">3.<strong>阿万音铃羽为什么会带着和桥田至很像的帽子</strong>？</h3><p>或许仅仅是铃羽的个人喜好，抑或未来的桶子特意送过她一顶相同样式的帽子。</p><h3 id="4-阿万音铃羽所在未来的世界线与冈部伦太郎回归后的世界线，都是命运石之门世界线吗？">4.<strong>阿万音铃羽所在未来的世界线与冈部伦太郎回归后的世界线，都是命运石之门世界线吗？</strong></h3><p>是的，广义上来说都是命运石之门世界线。或许由于冈部的消失，世界线变动率有小数点六位之后的细微变动，但小数点六位之前的数字一直是 1.048596%</p><h3 id="5-为什么世界上消失了一个人，世界线变动率却没有发生变化？">5.<strong>为什么世界上消失了一个人，世界线变动率却没有发生变化？</strong></h3><p>因为冈部的<strong>消失</strong>——或者说变为<strong>不可视</strong>——只是他个人的存在状态问题，对命运石之门世界线的历史影响微乎其微。</p><p>（即便铃羽从未来回到过去对世界线产生了一定程度的干涉，也没有使世界线脱离命运石之门世界线的范围）</p><h3 id="6-为什么牧濑红莉栖为冈部伦太郎购买的白大褂不会随着冈部伦太郎消失？">6.<strong>为什么牧濑红莉栖为冈部伦太郎购买的白大褂不会随着冈部伦太郎消失？</strong></h3><p>根据<strong>Q5</strong>，世界线并未完全重构，只是经历了小数点六位之后的“<emp>微小变化</emp>”，因此冈部并不是完全意义上的“消失”——即与他有关联的物品、事件都不会消失，只是他个人的存在状态发生了变化。</p><h3 id="7-冈部伦太郎消失的时间是固定的吗？">7.<strong>冈部伦太郎消失的时间是固定的吗？</strong></h3><p>时段大致固定，但具体时间不详。</p><p>冈部的<strong>第一次</strong>消失是在<span class="p cyan">8 月 4 日中午 11:35</span>之后，红莉栖洗澡后去洗衣房遇见他时。</p><p>冈部的<strong>第二次</strong>消失是在<span class="p cyan">8 月 4 日上午 10:36</span>。冈部给红莉栖发送了“<strong>さよなら</strong>”的邮件，并在红莉栖狂奔抵达 Lab 后恰好消失。</p><h3 id="8-铃羽所说的“让牧濑红莉栖成为观测者”是什么意思？">8.<strong>铃羽所说的“让牧濑红莉栖成为观测者”是什么意思？</strong></h3><p>受世界线重构机制的限制，一般人是无法记录世界线变动的过程的。</p><p>而铃羽这句话的意思，就是让红莉栖通过时间跳跃，去观测时间跳跃前发生的历史，进而与自身的记忆进行比对，从而感受到强烈的差异性，这种差异性直接指向“<u>客观时间序列中曾经发生过冈部伦太郎在 8 月 4 日消失</u>”这一结论。</p><p>而这一结论，强化了这种差异性在红莉栖脑中的<strong>因果关系</strong>，使其在红莉栖脑中产生强烈的印象。此时，红莉栖就有了成为所谓的“观测者”的特质：她认识到两条世界线的不同，并且可以主观地进行改变。</p><p>除此之外，这种差异性还在另一个层面上发挥了作用：当红莉栖脑内有关冈部的记忆被世界重构消失后，她对新世界线情报的检索，会不自觉地检索到这条“跨世界线”的因果关系上，红莉栖就会出现极强烈的“既视感”或“违和感”，使她拥有回想起冈部的基础。</p><h3 id="9-为什么第一次时间跳跃后的牧濑红莉栖，对冈部伦太郎-8-月-3-日晚的两次暂时消失与-8-月-4-日上午的彻底消失的反应不同？">9.<strong>为什么第一次时间跳跃后的牧濑红莉栖，对冈部伦太郎 8 月 3 日晚的两次暂时消失与 8 月 4 日上午的彻底消失的反应不同？</strong></h3><p>冈部彻底消失的时候，世界对相关记忆的删除相较于冈部暂时消失时更为彻底，所以作为观测者的红莉栖，在冈部暂时消失的时候，能够清楚地回想起冈部的存在，并未出现遗忘的现象；</p><p>而在冈部彻底消失的时候，红莉栖需要努力回想一段时间，才可以勉强回想起冈部的存在。</p><p id="Q10"></p><h3 id="10-R-世界线究竟是什么？为什么会和命运石之门世界线同时存在？这代表剧场版的设定是平行世界吗？">10.<strong>R 世界线究竟是什么？为什么会和命运石之门世界线同时存在？这代表剧场版的设定是平行世界吗？</strong></h3><p>R 世界线由于其特殊性，并不能和一般意义上的世界线相提并论。</p><p>虽然剧场版中铃羽（和未来的红莉栖）以 R 世界线来称呼它，但从剧情以及描述来看，比起世界线，它更像是一个“世界的垃圾箱”，存储着不属于命运石之门世界线的（一定范围）的历史。</p><hr><ul><li>为什么会诞生这样一条 R 世界线？</li></ul><p>因为命运石之门世界线是处于α、β两大收束范围之间的“理想”、“奇迹般”的世界线，相较于α与β收束范围内的一般世界线更加不稳定，会产生摇晃、波动。从设定集和年表来看，命运石之门世界线的确存在某些违和之处，其因果有一些不牢靠的地方。例如冈部浑身是血地出现在广播馆天台的原因，桶子与真由理赶来将冈部送到医院的原因等都难以解释。</p><p>因此，R 世界线应运而生，作为命运石之门世界线的“反面”，支撑着命运石之门世界线的因果。如果没有 R 世界线的存在，命运石之门世界线可能无法维持存续，导向崩坏。</p><p><strong>（在这个解释下，剧场版的标题“负荷领域”既可以被理解为冈部由于承载的记忆超负荷而偏移到的领域，也可以被理解为支撑了命运石之门世界线因果的领域。）</strong></p><p>如此，<strong>由于 R 世界线不属于常规意义上的世界线，而是一个储存了大范围其它世界线历史的“数据库”，因此剧场版并没有出现两条世界线同时存在、所谓“平行世界”这样违背本篇设定的 BUG。</strong></p><div class="note info"><p>也存在另一种观点：R 世界线并非命运石之门世界线所特有的，每条世界线都存在对应的 Reverse 世界线，只是由于命运石之门世界线相较一般的世界线更不稳定，因此 R 世界线更容易被观测到。</p></div><hr><p>以下摘自剧场版小说原文：</p><blockquote><p>在现象的地平线彼岸，时间和空间的作用互换了。</p><p>能够到达任何时间点，却哪儿也去不了。无法确定的事实、无法确定的认识、无法确定的存在。</p><p>摇曳着，<strong>虽说是 R 世界线，却没有实感。什么都是不确定的，所谓世界线只是虚名的概念。</strong></p><p>如果作为现实观测的东西没有确定下来的话，观测那个东西的人也不可能存在，即使是意识也不能存在，这是认识的黑洞。</p><p>即使思考变成光那般迅速，电位信号在神经元上来回奔跑，这种想法也是谁都……哪里都，甚至连自己都传达不到。</p><p>没有接收者。过去和未来的夹缝之间应该存在着的「现在」，因为极大的扩张而消失了。</p><p><strong>如果没有猜错的话，那里有着已经发生却又没发生的事情。那里是装满了被从合理的世界线扔掉的不合理的记忆的垃圾箱。</strong></p></blockquote><h3 id="11-冈部伦太郎从命运石之门世界线消失的原因是什么？">11.<strong>冈部伦太郎从命运石之门世界线消失的原因是什么？</strong></h3><p>与一般人不同，由于 Reading Steiner 的原因，冈部的记忆是断片化的、不连续的。大量来自其它世界线的记忆给他的大脑造成了严重的负担，使他的主观认知感受到了命运石之门世界线的摇晃，逐渐向包含了其它世界线历史的 R 世界线偏移，并影响到了冈部自身的<strong>存在状态</strong><a href="#note-state">(📢)</a>。</p><p>最终冈部偏移到了所有人的主观认知之外，他们脑内有关冈部的记忆尽数消失，呈现出了“冈部伦太郎消失，且世界上无人知道他的存在”的异常状态。</p><p>以下内容摘自剧场版小说原文：</p><blockquote><p>“在众多世界线中漂流的记忆……由于「Reading Steiner」的负担越来越重，导致冈部伦太郎主观上感知到了波动，移动到了 R 世界线。”</p><p>“然后……在这条世界线上就变成了，冈部原本就不存在……？”</p><p>“嗯……**与其说他是移动了，不如说他是到我们的认知之外了，这样更恰当吧。世界线应该还没有移动，但世界却必须要消除关于他的记忆。**这种情况相当异常啊。”</p><p>……</p><p><strong>“冈部伦太郎受到了其他世界线的影响，无法建立这条命运石之门世界线就是现实世界线的认识。”</strong></p><p>铃羽说道。</p><p>对他而言，这条世界线的现实感远不如充满生命危险的α世界线收束，甚至连β世界线收束也比不上。在这条和平得无聊的“理想”的命运石之门世界线上活着的实感、现实感正在变弱。</p><p id="note-state"></p><p>这就是冈部伦太郎及其「Reading Steiner」的脆弱性。</p><p>“——所以他无法认知了。换种说法就是，<strong>冈部伦太郎到了自己能够认知 R 世界线，而 R 世界线正是别的世界线的“负荷”记忆的领域。</strong>”</p></blockquote><div class="note info"><p>这里并没有解释冈部对世界线的认知为什么会影响到他的存在状态，该问题目前没有定论，官方也没有提及。不过 QA 制作组对这个问题有一个涉及科学 ADV 系列整体设定的猜想，可惜这里空白太小，写不下（与这篇剧场版 QA 关联很小，因此暂不详谈，请持续关注本 QA 制作组，也许未来会发相关解析？）。</p></div><h3 id="12-为什么在-8-月-3-日晚的-Lab-中，冈部伦太郎会忽然身临其境一般地看到α世界线的记忆？">12.<strong>为什么在 8 月 3 日晚的 Lab 中，冈部伦太郎会忽然身临其境一般地看到α世界线的记忆？</strong></h3><p>因为冈部的主观认知正在向 R 世界线偏移，因此很容易在类似的场景“幻视”到自己曾经在α世界线经历过的事情。</p><h3 id="13-为什么-8-月-3-日晚在-Lab-外，冈部伦太郎会看到他没有实际经历过的游戏中的支线剧情（铃羽线、黑化小动物）？">13.<strong>为什么 8 月 3 日晚在 Lab 外，冈部伦太郎会看到他没有实际经历过的游戏中的支线剧情（铃羽线、黑化小动物）？</strong></h3><p>由于命运石之门世界线是建立在α、β两大收束范围因果的基础上的，因此当世界线变动至命运石之门世界线的时候，世界将α、β两大收束范围中的所有情报当作“垃圾”扔进了 R 世界线，作为命运石之门世界线因果的支撑。</p><p>所以，R 世界线中也包含了冈部没有实际经历，但在变动过程中可能存在的世界线。</p><p>所以冈部在主观认知向 R 世界线偏移的过程中，他也会接触到这些自己没有实际经历过的可能性。</p><h3 id="14-在剧场版广播剧《现存在的后验》中，为什么铃羽会在时间机器实验中梦见了“α世界线的自己狙杀牧濑红莉栖”以及“母亲在自己的怀中死去”这两件事？">14.<strong>在剧场版广播剧《现存在的后验》中，为什么铃羽会在时间机器实验中梦见了“α世界线的自己狙杀牧濑红莉栖”以及“母亲在自己的怀中死去”这两件事？</strong></h3><p>铃羽在多次进行时间机器实验后，作为时间旅行者的她可能也在主观上感知到了命运石之门世界线的摇晃，从而接触到了 R 世界线中其它世界线的历史片段。</p><p>这也是红莉栖知道这件事后决定停止时间机器实验的原因，她害怕继续实验下去会使铃羽落得和冈部一样的下场。</p><h3 id="15-牧濑红莉栖遇见小时候的冈部伦太郎时，为什么会出现一段时间少女时期的牧濑红莉栖？">15.<strong>牧濑红莉栖遇见小时候的冈部伦太郎时，为什么会出现一段时间少女时期的牧濑红莉栖？</strong></h3><p>这一段实际上是一种<emp>演出手法</emp>，并不是指红莉栖实际的形象变成了少女，<strong>而是通过这一形象表现出红莉栖此时迷茫、孤独的心境，恰好和她身边少年时期的冈部是一样的</strong>。<a href="#note-kiuma">(📢)</a></p><p>以下内容摘自<strong>剧场版设定集</strong>中关于该问题的问答：</p><blockquote><p>“——这一次，在东池袋的杂司谷，正在跟小时候的冈部搭话的牧濑红莉栖突然变成了某一天的小时候的牧濑红莉栖。这样的画面上的变化，佐藤总监督是如何构思的呢？</p><p id="note-kiuma"></p><p>佐藤：这里是不想用语言来限制意义的部分。<strong>我们想描绘少年时代，无法阻止真由理，只能独自迷茫的冈部，与一样无能为力、迷茫的牧濑红莉栖，想把两个人的感情重叠在一起，这就是我们要表达的意思。</strong>”</p></blockquote><div class="note info"><p>本段剧情与命运石之门 0 中，β世界线上冈部与篝相遇的经历并没有直接联系。（也许 0 中描写这段经历时参考了剧场版的剧情，而非弹幕谣传的那种相反的创作顺序，例如“红莉栖代替了当时的篝”。</p></div><h3 id="16-冈部伦太郎是如何在牧濑红莉栖的帮助下回到命运石之门世界线的？为什么红莉栖选择回到-2005-年-6-月-30-日？">16.<strong>冈部伦太郎是如何在牧濑红莉栖的帮助下回到命运石之门世界线的？为什么红莉栖选择回到 2005 年 6 月 30 日？</strong></h3><p>冈部消失的原因，是其主观认知无法感受到命运石之门世界线的实在，因此红莉栖通过回到 2005 年夺取 13 岁冈部的初吻（这一从未发生过但又不影响其它既定事实的行为），加强了冈部对于命运石之门世界线的印象，让他认识到命运石之门世界线对他而言是独一无二的，从而使得冈部的主观认知偏移回来。</p><p>之所以红莉栖选择回到 2005 年 6 月 30 日，是由于当时正处于真由理因外婆去世而感到厌世、冈部不知如何慰藉真由理而感到迷茫和无助的时刻，冈部对此印象非常深刻。因此红莉栖在此时夺取冈部的初吻，会对冈部施加最牢固的印象，帮助冈部认知命运石之门世界线是独一无二的。</p><p>以下摘自<strong>剧场版动画台词</strong>：</p><blockquote><p>“未来的你说过，是可以的。确实如果改变了过去的话，世界线就会发生变动，所以要完全保留已发生的事实，仅仅改变冈部伦太郎的记忆。”</p><p>“改变记忆……”</p><p>“冈部伦太郎本人始终无法建立起命运石之门世界线就是现实的认知。我们只需要让他认识到，这条世界线和其它的记忆有着明显的不同。”</p><p>“为此就需要改变冈部的记忆。”</p><p>“没错。<strong>做出一个在别的世界线都没有的、强烈而鲜明的记忆，这样一来，这条世界线就会显示出和其它世界线的显著差异，作为一个结果被输入冈部伦太郎的大脑，将他从【Reading·Steiner】带来的过度负荷中解放。</strong>”</p></blockquote><h3 id="17-冈部伦太郎在-R-世界线收到的“手机视频”是什么？">17.<strong>冈部伦太郎在 R 世界线收到的“手机视频”是什么？</strong></h3><p>根据剧场版小说原文，这里是红莉栖拨打的视频通话，<strong>并非</strong>发送了类似 D-movie 一般的信息。</p><p>以下摘自<strong>剧场版小说原文</strong>（与动画剧情略有差别）：</p><blockquote><p>TRRRRRR…………</p><p>来电铃声响起。</p><p>翻了翻白衣的口袋，手上拿着深红色的直板手机。</p><p>于是──醒悟过来了。</p><p>为什么手机会响？</p><p>为什么会，在这里？白衣青年一边摇晃着手机，一边看了看画面。</p><p>视频通话。画面开始紊乱，噪音流入大脑。</p></blockquote><h3 id="18-为什么牧濑红莉栖会和冈部伦太郎同时出现在-R-世界线？">18.<strong>为什么牧濑红莉栖会和冈部伦太郎同时出现在 R 世界线？</strong></h3><p><strong>红莉栖并未经历过世界线变动，没有冈部那样的主观认知问题，所以她不可能出现在 R 世界线。</strong></p><p>片尾这一段剧情其实是命运石之门世界线上的红莉栖乘坐时间机器回到 2011 年之后发生的，只不过一开始冈部的认知中只有红莉栖的存在。</p><p><strong>因为冈部的主观认知逐渐向命运石之门世界线偏移的原因是红莉栖给予的独特的强烈印象（即初吻），所以冈部起初只能感受到红莉栖的存在，之后在红莉栖的“提示”下，他才完全回归了命运石之门世界线。</strong></p><p>以下摘自<strong>剧场版小说原文</strong>：</p><blockquote><p>“你在发什么呆，变态！”</p><p><strong>红莉栖终于观测到了 R 世界线上消失的他。</strong></p><p><strong>不，让他被观测到了。只有冈部，和自己——命运石之门世界线的牧濑红莉栖，没有其他人。</strong></p><p>“你……为什么……在这里？”</p><p><strong>“不是我来了，而是你正要回去。”</strong></p></blockquote><h3 id="19-为什么给予命运石之门世界线少年时期的冈部伦太郎初吻的印象，最初来自β世界线的成年冈部伦太郎会记得这件事情？">19.<strong>为什么给予命运石之门世界线少年时期的冈部伦太郎初吻的印象，最初来自β世界线的成年冈部伦太郎会记得这件事情？</strong></h3><p>因为 R 世界线中同样包含了命运石之门世界线过去的历史，当“红莉栖夺走了冈部的初吻”这件事发生之后，就会“同步更新”在 R 世界线的记录中，曾位于 R 世界线的冈部回到命运石之门世界线后自然便记得这件事。</p><h3 id="20-冈部伦太郎所说的“能还给我吗？我的初吻”与本篇-EP22-中他所说的“真可惜啊，这并不是我的初吻”有关联吗？">20.<strong>冈部伦太郎所说的“能还给我吗？我的初吻”与本篇 EP22 中他所说的“真可惜啊，这并不是我的初吻”有关联吗？</strong></h3><p><strong>没有关联</strong>。</p><p>“红莉栖夺走了冈部的初吻”这件事发生在命运石之门世界线上，并且发生在冈部消失之后。</p><p>而本篇 EP22 的剧情发生在α世界线，冈部消失这件事也并未发生过。</p><p>因此当时冈部所说的自己的初吻，可能指的是本篇 EP20 中强吻了萌郁，也有可能是小时候他和真由理曾经撞在一起无意中接了吻（本篇游戏、树状图真由理线、剧场版小说中都曾提到过）。</p><h2 id="Part-Ⅲ-剧场版剧情梳理">Part Ⅲ <strong>剧场版剧情梳理</strong></h2><h4 id="一周目"><strong>一周目</strong></h4><div class="timeline"><div class="timenode"><div class="meta"><p></p><p>2011 年 8 月 3 日</p><p></p></div><div class="body"><p>2011 年 8 月 3 日，牧濑红莉栖从美国回到日本，与 Labmem 们聚会。</p></div></div><div class="timenode"><div class="meta"><p></p><p>2011 年 8 月 4 日</p><p></p></div><div class="body"><p>红莉栖在洗衣房前与冈部伦太郎擦肩而过，没能送出自己提前准备的礼物——白大褂。不久之后冈部消失。</p></div></div><div class="timenode"><div class="meta"><p></p><p>2017 年</p><p></p></div><div class="body"><p>阿万音铃羽出生。</p></div></div><div class="timenode"><div class="meta"><p></p><p>2036 年</p><p></p></div><div class="body"><p>红莉栖成功造出了时间机器，铃羽不顾红莉栖的阻止启动时间机器回到了 2011 年（广播剧《现存在的后验》剧情）。</p></div></div></div><h4 id="二周目-sub-剧场版动画的最初时间-sub"><strong>二周目|<sub>剧场版动画的最初时间</sub></strong></h4><div class="timeline"><div class="timenode"><div class="meta"><p></p><p>2011 年 8 月 3 日</p><p></p></div><div class="body"><p>牧濑红莉栖从美国回到日本，阿万音铃羽出现在机场。晚上，<strong>Labmem</strong>们进行了聚会。</p></div></div><div class="timenode"><div class="meta"><p></p><p>2011 年 8 月 4 日</p><p></p></div><div class="body"><p>红莉栖在酒店洗澡时，铃羽潜入房间给红莉栖留下了提示“手机、微波炉、SERN”。红莉栖察觉到异常后，没有向浴缸里注水慢悠悠地洗澡，因此提前赶到了洗衣房，遇见冈部并送出了白大褂。在聊天过程中冈部消失。</p></div></div><div class="timenode"><div class="meta"><p></p><p>2011 年 8 月 13 日</p><p></p></div><div class="body"><p>红莉栖研制出了时间跳跃机器（该时间跳跃机器并没有本篇中 48 小时的可回溯时间上限），并使用它回到了 10 天前。</p></div></div></div><h4 id="三周目-sub-牧濑红莉栖时间跳跃之后-sub"><strong>三周目|<sub>牧濑红莉栖时间跳跃之后</sub></strong></h4><div class="timeline"><div class="timenode"><div class="meta"><p></p><p>2011 年 8 月 3 日晚 -8 月 4 日凌晨</p><p></p></div><div class="body"><p>牧濑红莉栖两次观测到冈部伦太郎的消失，并与冈部、铃羽讨论了他即将消失的现象。</p></div></div><div class="timenode"><div class="meta"><p></p><p>2011 年 8 月 4 日</p><p></p></div><div class="body"><p>红莉栖赶到 Lab 的时候冈部恰好消失，她决定听从冈部的警告，放弃使用时间跳跃机器。</p></div></div><div class="timenode"><div class="meta"><p></p><p>2011 年 8 月 13 日晚 -8 月 14 日凌晨</p><p></p></div><div class="body"><p>铃羽质问红莉栖真正的心愿，并带她登上时间机器。两人一同回到了 2005 年 6 月 30 日。</p></div></div></div><h4 id="四周目-sub-牧濑红莉栖第一次使用时间机器-sub"><strong>四周目|<sub>牧濑红莉栖第一次使用时间机器</sub></strong></h4><div class="timeline"><div class="timenode"><div class="meta"><p></p><p>2005 年 6 月 30 日</p><p></p></div><div class="body"><p>牧濑红莉栖第一次拯救冈部伦太郎失败。</p></div></div><div class="timenode"><div class="meta"><p></p><p>2011 年 8 月 14 日</p><p></p></div><div class="body"><p>回到现在的红莉栖感到心灰意冷，本打算再次放弃拯救冈部，但其它 Labmem 们全部渐渐回想起了冈部的存在，点燃了红莉栖的斗志。</p></div></div><div class="timenode"><div class="meta"><p></p><p>2011 年 8 月 15 日</p><p></p></div><div class="body"><p>红莉栖与铃羽再次乘上时间机器。</p></div></div></div><h4 id="五周目-sub-牧濑红莉栖第二次使用时间机器-sub"><strong>五周目|<sub>牧濑红莉栖第二次使用时间机器</sub></strong></h4><div class="timeline"><div class="timenode"><div class="meta"><p></p><p>2005 年 6 月 30 日</p><p></p></div><div class="body"><p>牧濑红莉栖夺走了冈部伦太郎的初吻。</p></div></div><div class="timenode"><div class="meta"><p></p><p>2011 年 x 月 x 日</p><p></p></div><div class="body"><p>红莉栖乘坐时间机器回到现在，铃羽和时间机器消失，冈部回归命运石之门世界线。</p></div></div></div><hr><div class="note info"><p>注意，此处的所谓一周目只是为了方便才这么称呼，可以清晰地显示客观时间序列上的逻辑顺序，实际并不代表它就是<strong>最初的</strong>。</p></div><h2 id="Part-Ⅳ-剧场版相关作品整理">Part Ⅳ <strong>剧场版相关作品整理</strong></h2><h3 id="动画">动画</h3><ul><li><p>《命运石之门：负荷领域的既视感》是由 WHITE FOX 制作的动画电影。</p><p>电影作为《命运石之门》系列的第一部剧场版动画，讲述的是发生在电视本篇真结局及第 25 话 OVA 之后的全新故事。情节起始于 2011 年 8 月，以红莉栖视角为主，讲述了牧濑红莉栖和冈部伦太郎两人跨越世界线的情感故事。电影于 2013 年 4 月 20 日在日本上映。</p></li></ul><h3 id="小说">小说</h3><ul><li><p>《剧场版 命运石之门：负荷领域的既视感 上/下》是由动画原案改编的两卷小说（已完结），小说作者滨崎达也，两卷分别于 2013 年 5 月 1 日和 2013 年 6 月 1 日发售。</p><p>该小说是把命运石之门本篇的 OVA 和剧场版动画结合在一起，完整且更详细地讲述了冈部伦太郎到达命运石之门世界线之后一年内的故事。</p><p>其中对 R 世界线等设定的补充比起动画中的描述更加详细也更为准确，是命运石之门衍生作品中必读的一部。</p></li></ul><h3 id="漫画">漫画</h3><ul><li><p>《剧场版 命运石之门：负荷领域的既视感 (1)/(2)》是由动画原案改编的两卷单行本漫画（已完结），漫画作者九我山レキ。</p><p>该漫画曾在杂志《月刊少年 ACE》（毎月 26 日发售）上连载</p><p>两卷单行本则分别于 2013 年 4 月 24 日和 2013 年 12 月 26 日发售。</p></li></ul><h3 id="广播剧">广播剧</h3><ol><li><p><strong>命运石之门</strong> <strong>赤面必至的流言</strong></p><p>Comptiq 2013 年 5 月号附录原创 Drama CD，讲述牧濑红莉栖和菲莉丝对桥田至和阿万音由季的交往经过感到好奇，从而展开调查的故事，世界线同动画剧场版。</p></li><li><p><strong>命运石之门</strong> <strong>现存在的后验</strong>（又译：此在的因果论）</p><p>动画剧场版 BD 限定版特典，阿万音铃羽视角，剧场版的冈部伦太郎消失后 20 年间，牧濑红莉栖发明时间机器的故事，世界线同动画剧场版。</p></li><li><p><strong>命运石之门</strong> <strong>隐晦曲折的交响曲</strong></p><p>动画剧场版 BD 限定版 <a target="_blank" href="http://Amazon.co.jp" rel="external nofollow noreferrer noopener">Amazon.co.jp</a> 预约特典，剧场版剧情的补完，时间发生在剧场版的前一周，世界线同动画剧场版。</p></li><li><p><strong>命运石之门</strong> <strong>意材言外的分形</strong></p><p>动画剧场版 BD 限定版先行店铺预约特典，世界线同动画剧场版。</p></li><li><p><strong>命运石之门</strong> <strong>混沌的必然演示</strong></p><p>Softmap DVD/BD全卷购入特典，原创广播剧，大意为剧场版确定。</p><p>冈部伦太郎把所有人的想法集合在一起，弄出一个超级无厘头的剧场版。然后大家都无语并抛弃他了。世界线同动画剧场版。</p></li></ol><h2 id="Part-Ⅴ-其他说明">Part Ⅴ <strong>其他说明</strong></h2><h3 id="科学-ADV-系列相关中文资料网站-sub-建设中-sub"><strong>科学 ADV 系列相关中文资料网站</strong>|<sub>建设中</sub></h3><ol><li><a target="_blank" rel="noopener" href="https://sci-adv.cc/wiki/%E9%A6%96%E9%A1%B5">科学 ADV 中文 wiki</a></li><li><a href="https://lib.sci-adv.cc">科学 ADV 图书馆</a></li></ol><h3 id="科学-ADV-交流频道"><strong>科学 ADV 交流频道</strong></h3><blockquote><p><strong>QQ 新增功能</strong>：<strong>频道</strong>，点击链接可直接加入：<a target="_blank" href="https://qun.qq.com/qqweb/qunpro/share?_wv=3&amp;_wwv=128&amp;inviteCode=1HSlkl&amp;from=246610&amp;biz=ka" rel="external nofollow noreferrer noopener">科学 ADV 频道</a>、<a target="_blank" href="https://qun.qq.com/qqweb/qunpro/share?_wv=3&amp;_wwv=128&amp;inviteCode=BS7Tt&amp;from=246610&amp;biz=ka" rel="external nofollow noreferrer noopener">命运石之门频道</a></p></blockquote><div align="center"><img no-lazy class="inline" src="https://cdn.jsdelivr.net/gh/SlieFamily/TempImages@1.0.1/QQGuild/SteinsGate.jpg" style="height:200px"> <img no-lazy class="inline" src="https://cdn.jsdelivr.net/gh/SlieFamily/TempImages@1.0.1/QQGuild/sciADV.jpg" style="height:200px"></div><div class="note info"><p>注：如果您的 QQ 尚未开通频道功能，也可以通过加入下面所列出来的 QQ 群获取<strong>频道通行证</strong></p></div><h3 id="科学-ADV-粉丝组织"><strong>科学 ADV 粉丝组织</strong></h3><h4 id="反物质委员会"><strong>反物质委员会</strong></h4><p>致力于维持并发展科学 ADV 中文圈的国内科学 ADV 系列核心组织欢迎有意愿发电的粉丝查看 UP 主反物质委员会的专栏内的组织架构，选择适合自己的部门</p><p><strong>加群请私信 UP 想要担任的职务并展示能够胜任该岗位的凭证</strong></p><div class="tag link"><a class="link-card" title="反物质委员会|B 站专栏" target="_blank" href="https://www.bilibili.com/read/cv11242272" rel="external nofollow noreferrer noopener"><div class="left"><img src="https://unpkg.com/mcseekeri@1.2.9/avatar/反物质委员会.webp" class="lazyload" data-srcset="https://unpkg.com/mcseekeri@1.2.9/avatar/反物质委员会.webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></div><div class="right"><p class="text">反物质委员会|B 站专栏</p><p class="url">https://www.bilibili.com/read/cv11242272</p></div></a></div><h4 id="未来同人研究所"><strong>未来同人研究所</strong></h4><p>致力于创作《命运石之门》及科学 ADV 系列相关同人作品的同人社团</p><p>欢迎有创作意愿的写手/画手或是其它任何作品形式的爱好者加入我们！</p><p><strong>群号：681427075</strong></p><h4 id="科学-ADV-复兴祭"><strong>科学 ADV 复兴祭</strong></h4><p>致力于创作科学 ADV 系列相关同人作品的同人社团</p><p>欢迎有创作意愿的写手/画手或是其它任何作品形式的爱好者加入我们！</p><p><strong>群号：806022928</strong></p><h4 id="SOS-团-石学圆桌会议"><strong>SOS 团;石学圆桌会议</strong></h4><p>致力于讨论动画《命运石之门》和《命运石之门 0》及有关游戏、小说、漫画、广播剧等作品的人物、剧情及设定，为萌新科普、答疑解惑的普通爱好者交流群。</p><p><strong>群号：729901771</strong></p><h4 id="科学-ADV-总基地"><strong>科学 ADV 总基地</strong></h4><p>致力于讨论科学 ADV 系列游戏及相关动画、小说、漫画、广播剧等作品的人物、剧情及设定，为萌新科普、答疑解惑的普通爱好者交流群。</p><p><strong>群号：757530435</strong></p><h3 id="制作人员名单">制作人员名单</h3><p>在此特别感谢对《命运石之门剧场版 QA 手册》的制作做出主要贡献的成员：</p><p><strong>负责讨论、编写、修订</strong></p><blockquote><p>@听风落羽|<img no-lazy class="inline" src="https://unpkg.com/mcseekeri@1.3.0/avatar/%E5%90%AC%E9%A3%8E%E8%90%BD%E7%BE%BD.webp" style="height:20px"></p><p>@星影|<img no-lazy class="inline" src="https://unpkg.com/mcseekeri@1.3.0/avatar/%E6%98%9F%E5%BD%B1.webp" style="height:20px"></p><p>@Slie-wdy|<img no-lazy class="inline" src="https://unpkg.com/mcseekeri@1.3.0/avatar/Slie.webp" style="height:20px"></p><p>@可爱的 serika|<img no-lazy class="inline" src="https://unpkg.com/mcseekeri@1.2.6/avatar/serika.jpg" style="height:20px"></p><p>@Sisyphe_菠萝|<img no-lazy class="inline" src="https://unpkg.com/mcseekeri@1.3.0/avatar/Sisyphe.webp" style="height:20px"></p></blockquote><p><strong>提供宝贵的建议以及资源</strong></p><blockquote><p>@laozei|<img no-lazy class="inline" src="https://unpkg.com/mcseekeri@1.3.0/avatar/laozei.webp" style="height:20px"></p><p>@天光逸|<img no-lazy class="inline" src="https://unpkg.com/mcseekeri@1.2.6/avatar/tgy.jpg" style="height:20px"></p></blockquote><p><strong>——命运石之门 FAQ 制作组</strong></p><h2 id="结语">结语</h2><p>感谢能够看到这里的每一个人！千言万语汇成一句话：<strong>我们不会停滞于此——</strong></p><p>敬请期待本小组后续的【命运石之门本篇 QA 手册 Elite】及【命运石之门 0 动画 QA 手册】！</p></div><div class="footer"><div class="copyright license"><div class="license-title">S;G:负荷领域的既视感 QA 手册</div><div class="license-link"><a href="https://lib.sci-adv.cc/archives/ff129072/">https://lib.sci-adv.cc/archives/ff129072/</a></div><div class="license-meta"><div class="license-meta-item"><div class="license-meta-title">本文作者</div><div class="license-meta-text">反物质委员会</div></div><div class="license-meta-item"><div class="license-meta-title">发布于</div><div class="license-meta-text">2021年8月10日</div></div><div class="license-meta-item"><div class="license-meta-title">更新于</div><div class="license-meta-text">2024年7月25日</div></div><div class="license-meta-item"><div class="license-meta-title">许可协议</div><div class="license-meta-text">来自互联网</div></div></div><div class="license-statement">本文来自互联网，未知来源，侵权请联系删除。</div></div></div><div class="article-meta" id="bottom"><div class="new-meta-box"><div class="new-meta-item date" itemprop="dateModified" datetime="2024-07-25T19:20:37+08:00"><a class="notlink"><i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i><p>更新于：2024年7月25日</p></a></div><div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E8%AE%BE%E5%AE%9A/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>设定</p></a></div><div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E8%AE%A8%E8%AE%BA%E6%8E%A2%E7%A9%B6/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>讨论探究</p></a></div><span hidden itemprop="keywords">设定 讨论探究</span><div class="new-meta-item share -mob-share-list"><div class="-mob-share-list share-body"><a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://lib.sci-adv.cc/archives/ff129072/&title=S;G:负荷领域的既视感 QA 手册 - 科学ADV图书馆&pics=https://unpkg.com/mcseekeri@1.2.3/cog.svg&summary="><img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png"> </a><a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://lib.sci-adv.cc/archives/ff129072/&title=S;G:负荷领域的既视感 QA 手册 - 科学ADV图书馆&pics=https://unpkg.com/mcseekeri@1.2.3/cog.svg&summary="><img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png"> </a><a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener" target="_blank" href="http://service.weibo.com/share/share.php?url=https://lib.sci-adv.cc/archives/ff129072/&title=S;G:负荷领域的既视感 QA 手册 - 科学ADV图书馆&pics=https://unpkg.com/mcseekeri@1.2.3/cog.svg&summary="><img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png"> </a><a class="-mob-share-telegram" title="" rel="external nofollow noopener noreferrer noopener" target="_blank" href="https://t.me/share/url?url=https://lib.sci-adv.cc/archives/ff129072/&text=S;G:负荷领域的既视感 QA 手册 - 科学ADV图书馆"><img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/telegram.png"></a></div></div></div></div><div class="prev-next"><a class="prev" href="/archives/b0f67881/"><p class="title"><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>彼岸的拉普拉斯妖</p><p class="content">序 「凤凰院。」 他转身，看到站在子午线上的她。 他揉了揉眼睛：「格林威治？」 她举起手，要触摸他的脸一般——弓起食指弹了他的额头。 「嗷！」他反射性后退，却让不怎么平整的地砖给绊倒在地。 她弯...</p></a><a class="next" href="/archives/e74b7acb/"><p class="title">7月28日的出游<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p><p class="content">冈部从梦中惊醒，浑身都被汗水浸湿。他喘着粗气，心脏在疯狂地跳动，伸手摸了一把脸，上边全是不知道是汗水还是泪水的液体。 又得洗枕套了。他看着湿透的枕头这样想着。 已经不知道多少次，他在梦中见到那个...</p></a></div></article><article class="post white-box shadow" id="comments"><span hidden><meta itemprop="discussionUrl" content="/archives/ff129072/#comments"></span><p ct><i class="fa-solid fa-comments"></i> 评论区</p><div id="layoutHelper-comments"></div></article></div><aside id="l_side" itemscope itemtype="https://schema.org.cn/WPSideBar"><div class="widget-sticky"><section class="widget toc-wrapper desktop mobile" id="toc-div"><header><i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class="name">本文目录</span></header><div class="content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-text">前言</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%89%B9%E5%88%AB%E5%A3%B0%E6%98%8E"><span class="toc-text">特别声明</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%89%B9%E5%88%AB%E6%8F%90%E9%86%92"><span class="toc-text">特别提醒</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%89%B9%E5%88%AB%E6%84%9F%E8%B0%A2"><span class="toc-text">特别感谢</span></a></li></ol></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#Part%E2%85%A0-%E8%AE%BE%E5%AE%9A%E8%A7%A3%E6%9E%90"><span class="toc-text">PartⅠ 设定解析</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%B0%E5%BF%86"><span class="toc-text">记忆</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9F%AD%E6%9C%9F%E8%AE%B0%E5%BF%86%E4%B8%8E%E9%95%BF%E6%9C%9F%E8%AE%B0%E5%BF%86"><span class="toc-text">短期记忆与长期记忆</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%9E%E5%BF%86%E4%B8%8E%E8%81%94%E6%83%B3"><span class="toc-text">回忆与联想</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%82%E6%B5%8B"><span class="toc-text">观测</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%A2%E8%A7%82%E6%97%B6%E7%B3%BB%E5%88%97%E4%B8%8E%E4%B8%BB%E8%A7%82%E6%97%B6%E7%B3%BB%E5%88%97"><span class="toc-text">客观时系列与主观时系列</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%AA%E8%A7%86%E6%84%9F"><span class="toc-text">未视感</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%A2%E8%A7%86%E6%84%9F"><span class="toc-text">既视感</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%99%AE%E9%80%9A%E4%BA%BA%E5%9C%A8%E4%B8%96%E7%95%8C%E7%BA%BF%E5%8F%98%E5%8A%A8%E8%BF%87%E7%A8%8B%E4%B8%AD%E7%9A%84%E8%AE%B0%E5%BF%86%E5%8F%98%E5%8C%96"><span class="toc-text">普通人在世界线变动过程中的记忆变化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B0%E5%9E%8B%E8%84%91%E7%82%8E-sub-%E5%87%BA%E7%8E%B0%E5%9C%A8%E3%80%8A%E5%91%BD%E8%BF%90%E7%9F%B3%E4%B9%8B%E9%97%A8-0%E3%80%8B%E4%B8%AD-sub"><span class="toc-text">新型脑炎出现在《命运石之门 0》中</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Reading-Steiner-%E7%9A%84%E8%BF%87%E7%A8%8B"><span class="toc-text">Reading Steiner 的过程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#R-%E4%B8%96%E7%95%8C%E7%BA%BF"><span class="toc-text">R 世界线</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%B0%E5%BF%86%E7%A9%BA%E9%97%B4"><span class="toc-text">记忆空间</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Part-%E2%85%A1-Questions-Answers"><span class="toc-text">Part Ⅱ Questions &amp; Answers</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%89%A7%E5%9C%BA%E7%89%88%E7%AE%97%E6%98%AF%E5%AE%98%E6%96%B9%E7%9A%84%E6%AD%A3%E7%BB%9F%E7%BB%AD%E4%BD%9C%E5%90%97%EF%BC%9F"><span class="toc-text">1.剧场版算是官方的正统续作吗？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%89%A7%E5%9C%BA%E7%89%88%E5%B0%8F%E8%AF%B4%E4%B8%8E%E5%89%A7%E5%9C%BA%E7%89%88%E5%8A%A8%E7%94%BB%E6%9C%89%E4%BB%80%E4%B9%88%E8%81%94%E7%B3%BB%EF%BC%9F"><span class="toc-text">2.剧场版小说与剧场版动画有什么联系？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E9%98%BF%E4%B8%87%E9%9F%B3%E9%93%83%E7%BE%BD%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BC%9A%E5%B8%A6%E7%9D%80%E5%92%8C%E6%A1%A5%E7%94%B0%E8%87%B3%E5%BE%88%E5%83%8F%E7%9A%84%E5%B8%BD%E5%AD%90%EF%BC%9F"><span class="toc-text">3.阿万音铃羽为什么会带着和桥田至很像的帽子？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E9%98%BF%E4%B8%87%E9%9F%B3%E9%93%83%E7%BE%BD%E6%89%80%E5%9C%A8%E6%9C%AA%E6%9D%A5%E7%9A%84%E4%B8%96%E7%95%8C%E7%BA%BF%E4%B8%8E%E5%86%88%E9%83%A8%E4%BC%A6%E5%A4%AA%E9%83%8E%E5%9B%9E%E5%BD%92%E5%90%8E%E7%9A%84%E4%B8%96%E7%95%8C%E7%BA%BF%EF%BC%8C%E9%83%BD%E6%98%AF%E5%91%BD%E8%BF%90%E7%9F%B3%E4%B9%8B%E9%97%A8%E4%B8%96%E7%95%8C%E7%BA%BF%E5%90%97%EF%BC%9F"><span class="toc-text">4.阿万音铃羽所在未来的世界线与冈部伦太郎回归后的世界线，都是命运石之门世界线吗？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%96%E7%95%8C%E4%B8%8A%E6%B6%88%E5%A4%B1%E4%BA%86%E4%B8%80%E4%B8%AA%E4%BA%BA%EF%BC%8C%E4%B8%96%E7%95%8C%E7%BA%BF%E5%8F%98%E5%8A%A8%E7%8E%87%E5%8D%B4%E6%B2%A1%E6%9C%89%E5%8F%91%E7%94%9F%E5%8F%98%E5%8C%96%EF%BC%9F"><span class="toc-text">5.为什么世界上消失了一个人，世界线变动率却没有发生变化？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E4%B8%BA%E4%BB%80%E4%B9%88%E7%89%A7%E6%BF%91%E7%BA%A2%E8%8E%89%E6%A0%96%E4%B8%BA%E5%86%88%E9%83%A8%E4%BC%A6%E5%A4%AA%E9%83%8E%E8%B4%AD%E4%B9%B0%E7%9A%84%E7%99%BD%E5%A4%A7%E8%A4%82%E4%B8%8D%E4%BC%9A%E9%9A%8F%E7%9D%80%E5%86%88%E9%83%A8%E4%BC%A6%E5%A4%AA%E9%83%8E%E6%B6%88%E5%A4%B1%EF%BC%9F"><span class="toc-text">6.为什么牧濑红莉栖为冈部伦太郎购买的白大褂不会随着冈部伦太郎消失？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-%E5%86%88%E9%83%A8%E4%BC%A6%E5%A4%AA%E9%83%8E%E6%B6%88%E5%A4%B1%E7%9A%84%E6%97%B6%E9%97%B4%E6%98%AF%E5%9B%BA%E5%AE%9A%E7%9A%84%E5%90%97%EF%BC%9F"><span class="toc-text">7.冈部伦太郎消失的时间是固定的吗？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-%E9%93%83%E7%BE%BD%E6%89%80%E8%AF%B4%E7%9A%84%E2%80%9C%E8%AE%A9%E7%89%A7%E6%BF%91%E7%BA%A2%E8%8E%89%E6%A0%96%E6%88%90%E4%B8%BA%E8%A7%82%E6%B5%8B%E8%80%85%E2%80%9D%E6%98%AF%E4%BB%80%E4%B9%88%E6%84%8F%E6%80%9D%EF%BC%9F"><span class="toc-text">8.铃羽所说的“让牧濑红莉栖成为观测者”是什么意思？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-%E4%B8%BA%E4%BB%80%E4%B9%88%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%97%B6%E9%97%B4%E8%B7%B3%E8%B7%83%E5%90%8E%E7%9A%84%E7%89%A7%E6%BF%91%E7%BA%A2%E8%8E%89%E6%A0%96%EF%BC%8C%E5%AF%B9%E5%86%88%E9%83%A8%E4%BC%A6%E5%A4%AA%E9%83%8E-8-%E6%9C%88-3-%E6%97%A5%E6%99%9A%E7%9A%84%E4%B8%A4%E6%AC%A1%E6%9A%82%E6%97%B6%E6%B6%88%E5%A4%B1%E4%B8%8E-8-%E6%9C%88-4-%E6%97%A5%E4%B8%8A%E5%8D%88%E7%9A%84%E5%BD%BB%E5%BA%95%E6%B6%88%E5%A4%B1%E7%9A%84%E5%8F%8D%E5%BA%94%E4%B8%8D%E5%90%8C%EF%BC%9F"><span class="toc-text">9.为什么第一次时间跳跃后的牧濑红莉栖，对冈部伦太郎 8 月 3 日晚的两次暂时消失与 8 月 4 日上午的彻底消失的反应不同？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-R-%E4%B8%96%E7%95%8C%E7%BA%BF%E7%A9%B6%E7%AB%9F%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BC%9A%E5%92%8C%E5%91%BD%E8%BF%90%E7%9F%B3%E4%B9%8B%E9%97%A8%E4%B8%96%E7%95%8C%E7%BA%BF%E5%90%8C%E6%97%B6%E5%AD%98%E5%9C%A8%EF%BC%9F%E8%BF%99%E4%BB%A3%E8%A1%A8%E5%89%A7%E5%9C%BA%E7%89%88%E7%9A%84%E8%AE%BE%E5%AE%9A%E6%98%AF%E5%B9%B3%E8%A1%8C%E4%B8%96%E7%95%8C%E5%90%97%EF%BC%9F"><span class="toc-text">10.R 世界线究竟是什么？为什么会和命运石之门世界线同时存在？这代表剧场版的设定是平行世界吗？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#11-%E5%86%88%E9%83%A8%E4%BC%A6%E5%A4%AA%E9%83%8E%E4%BB%8E%E5%91%BD%E8%BF%90%E7%9F%B3%E4%B9%8B%E9%97%A8%E4%B8%96%E7%95%8C%E7%BA%BF%E6%B6%88%E5%A4%B1%E7%9A%84%E5%8E%9F%E5%9B%A0%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-text">11.冈部伦太郎从命运石之门世界线消失的原因是什么？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#12-%E4%B8%BA%E4%BB%80%E4%B9%88%E5%9C%A8-8-%E6%9C%88-3-%E6%97%A5%E6%99%9A%E7%9A%84-Lab-%E4%B8%AD%EF%BC%8C%E5%86%88%E9%83%A8%E4%BC%A6%E5%A4%AA%E9%83%8E%E4%BC%9A%E5%BF%BD%E7%84%B6%E8%BA%AB%E4%B8%B4%E5%85%B6%E5%A2%83%E4%B8%80%E8%88%AC%E5%9C%B0%E7%9C%8B%E5%88%B0%CE%B1%E4%B8%96%E7%95%8C%E7%BA%BF%E7%9A%84%E8%AE%B0%E5%BF%86%EF%BC%9F"><span class="toc-text">12.为什么在 8 月 3 日晚的 Lab 中，冈部伦太郎会忽然身临其境一般地看到α世界线的记忆？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#13-%E4%B8%BA%E4%BB%80%E4%B9%88-8-%E6%9C%88-3-%E6%97%A5%E6%99%9A%E5%9C%A8-Lab-%E5%A4%96%EF%BC%8C%E5%86%88%E9%83%A8%E4%BC%A6%E5%A4%AA%E9%83%8E%E4%BC%9A%E7%9C%8B%E5%88%B0%E4%BB%96%E6%B2%A1%E6%9C%89%E5%AE%9E%E9%99%85%E7%BB%8F%E5%8E%86%E8%BF%87%E7%9A%84%E6%B8%B8%E6%88%8F%E4%B8%AD%E7%9A%84%E6%94%AF%E7%BA%BF%E5%89%A7%E6%83%85%EF%BC%88%E9%93%83%E7%BE%BD%E7%BA%BF%E3%80%81%E9%BB%91%E5%8C%96%E5%B0%8F%E5%8A%A8%E7%89%A9%EF%BC%89%EF%BC%9F"><span class="toc-text">13.为什么 8 月 3 日晚在 Lab 外，冈部伦太郎会看到他没有实际经历过的游戏中的支线剧情（铃羽线、黑化小动物）？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#14-%E5%9C%A8%E5%89%A7%E5%9C%BA%E7%89%88%E5%B9%BF%E6%92%AD%E5%89%A7%E3%80%8A%E7%8E%B0%E5%AD%98%E5%9C%A8%E7%9A%84%E5%90%8E%E9%AA%8C%E3%80%8B%E4%B8%AD%EF%BC%8C%E4%B8%BA%E4%BB%80%E4%B9%88%E9%93%83%E7%BE%BD%E4%BC%9A%E5%9C%A8%E6%97%B6%E9%97%B4%E6%9C%BA%E5%99%A8%E5%AE%9E%E9%AA%8C%E4%B8%AD%E6%A2%A6%E8%A7%81%E4%BA%86%E2%80%9C%CE%B1%E4%B8%96%E7%95%8C%E7%BA%BF%E7%9A%84%E8%87%AA%E5%B7%B1%E7%8B%99%E6%9D%80%E7%89%A7%E6%BF%91%E7%BA%A2%E8%8E%89%E6%A0%96%E2%80%9D%E4%BB%A5%E5%8F%8A%E2%80%9C%E6%AF%8D%E4%BA%B2%E5%9C%A8%E8%87%AA%E5%B7%B1%E7%9A%84%E6%80%80%E4%B8%AD%E6%AD%BB%E5%8E%BB%E2%80%9D%E8%BF%99%E4%B8%A4%E4%BB%B6%E4%BA%8B%EF%BC%9F"><span class="toc-text">14.在剧场版广播剧《现存在的后验》中，为什么铃羽会在时间机器实验中梦见了“α世界线的自己狙杀牧濑红莉栖”以及“母亲在自己的怀中死去”这两件事？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#15-%E7%89%A7%E6%BF%91%E7%BA%A2%E8%8E%89%E6%A0%96%E9%81%87%E8%A7%81%E5%B0%8F%E6%97%B6%E5%80%99%E7%9A%84%E5%86%88%E9%83%A8%E4%BC%A6%E5%A4%AA%E9%83%8E%E6%97%B6%EF%BC%8C%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BC%9A%E5%87%BA%E7%8E%B0%E4%B8%80%E6%AE%B5%E6%97%B6%E9%97%B4%E5%B0%91%E5%A5%B3%E6%97%B6%E6%9C%9F%E7%9A%84%E7%89%A7%E6%BF%91%E7%BA%A2%E8%8E%89%E6%A0%96%EF%BC%9F"><span class="toc-text">15.牧濑红莉栖遇见小时候的冈部伦太郎时，为什么会出现一段时间少女时期的牧濑红莉栖？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#16-%E5%86%88%E9%83%A8%E4%BC%A6%E5%A4%AA%E9%83%8E%E6%98%AF%E5%A6%82%E4%BD%95%E5%9C%A8%E7%89%A7%E6%BF%91%E7%BA%A2%E8%8E%89%E6%A0%96%E7%9A%84%E5%B8%AE%E5%8A%A9%E4%B8%8B%E5%9B%9E%E5%88%B0%E5%91%BD%E8%BF%90%E7%9F%B3%E4%B9%8B%E9%97%A8%E4%B8%96%E7%95%8C%E7%BA%BF%E7%9A%84%EF%BC%9F%E4%B8%BA%E4%BB%80%E4%B9%88%E7%BA%A2%E8%8E%89%E6%A0%96%E9%80%89%E6%8B%A9%E5%9B%9E%E5%88%B0-2005-%E5%B9%B4-6-%E6%9C%88-30-%E6%97%A5%EF%BC%9F"><span class="toc-text">16.冈部伦太郎是如何在牧濑红莉栖的帮助下回到命运石之门世界线的？为什么红莉栖选择回到 2005 年 6 月 30 日？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#17-%E5%86%88%E9%83%A8%E4%BC%A6%E5%A4%AA%E9%83%8E%E5%9C%A8-R-%E4%B8%96%E7%95%8C%E7%BA%BF%E6%94%B6%E5%88%B0%E7%9A%84%E2%80%9C%E6%89%8B%E6%9C%BA%E8%A7%86%E9%A2%91%E2%80%9D%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-text">17.冈部伦太郎在 R 世界线收到的“手机视频”是什么？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#18-%E4%B8%BA%E4%BB%80%E4%B9%88%E7%89%A7%E6%BF%91%E7%BA%A2%E8%8E%89%E6%A0%96%E4%BC%9A%E5%92%8C%E5%86%88%E9%83%A8%E4%BC%A6%E5%A4%AA%E9%83%8E%E5%90%8C%E6%97%B6%E5%87%BA%E7%8E%B0%E5%9C%A8-R-%E4%B8%96%E7%95%8C%E7%BA%BF%EF%BC%9F"><span class="toc-text">18.为什么牧濑红莉栖会和冈部伦太郎同时出现在 R 世界线？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#19-%E4%B8%BA%E4%BB%80%E4%B9%88%E7%BB%99%E4%BA%88%E5%91%BD%E8%BF%90%E7%9F%B3%E4%B9%8B%E9%97%A8%E4%B8%96%E7%95%8C%E7%BA%BF%E5%B0%91%E5%B9%B4%E6%97%B6%E6%9C%9F%E7%9A%84%E5%86%88%E9%83%A8%E4%BC%A6%E5%A4%AA%E9%83%8E%E5%88%9D%E5%90%BB%E7%9A%84%E5%8D%B0%E8%B1%A1%EF%BC%8C%E6%9C%80%E5%88%9D%E6%9D%A5%E8%87%AA%CE%B2%E4%B8%96%E7%95%8C%E7%BA%BF%E7%9A%84%E6%88%90%E5%B9%B4%E5%86%88%E9%83%A8%E4%BC%A6%E5%A4%AA%E9%83%8E%E4%BC%9A%E8%AE%B0%E5%BE%97%E8%BF%99%E4%BB%B6%E4%BA%8B%E6%83%85%EF%BC%9F"><span class="toc-text">19.为什么给予命运石之门世界线少年时期的冈部伦太郎初吻的印象，最初来自β世界线的成年冈部伦太郎会记得这件事情？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#20-%E5%86%88%E9%83%A8%E4%BC%A6%E5%A4%AA%E9%83%8E%E6%89%80%E8%AF%B4%E7%9A%84%E2%80%9C%E8%83%BD%E8%BF%98%E7%BB%99%E6%88%91%E5%90%97%EF%BC%9F%E6%88%91%E7%9A%84%E5%88%9D%E5%90%BB%E2%80%9D%E4%B8%8E%E6%9C%AC%E7%AF%87-EP22-%E4%B8%AD%E4%BB%96%E6%89%80%E8%AF%B4%E7%9A%84%E2%80%9C%E7%9C%9F%E5%8F%AF%E6%83%9C%E5%95%8A%EF%BC%8C%E8%BF%99%E5%B9%B6%E4%B8%8D%E6%98%AF%E6%88%91%E7%9A%84%E5%88%9D%E5%90%BB%E2%80%9D%E6%9C%89%E5%85%B3%E8%81%94%E5%90%97%EF%BC%9F"><span class="toc-text">20.冈部伦太郎所说的“能还给我吗？我的初吻”与本篇 EP22 中他所说的“真可惜啊，这并不是我的初吻”有关联吗？</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Part-%E2%85%A2-%E5%89%A7%E5%9C%BA%E7%89%88%E5%89%A7%E6%83%85%E6%A2%B3%E7%90%86"><span class="toc-text">Part Ⅲ 剧场版剧情梳理</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%80%E5%91%A8%E7%9B%AE"><span class="toc-text">一周目</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BA%8C%E5%91%A8%E7%9B%AE-sub-%E5%89%A7%E5%9C%BA%E7%89%88%E5%8A%A8%E7%94%BB%E7%9A%84%E6%9C%80%E5%88%9D%E6%97%B6%E9%97%B4-sub"><span class="toc-text">二周目|剧场版动画的最初时间</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%89%E5%91%A8%E7%9B%AE-sub-%E7%89%A7%E6%BF%91%E7%BA%A2%E8%8E%89%E6%A0%96%E6%97%B6%E9%97%B4%E8%B7%B3%E8%B7%83%E4%B9%8B%E5%90%8E-sub"><span class="toc-text">三周目|牧濑红莉栖时间跳跃之后</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9B%9B%E5%91%A8%E7%9B%AE-sub-%E7%89%A7%E6%BF%91%E7%BA%A2%E8%8E%89%E6%A0%96%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BD%BF%E7%94%A8%E6%97%B6%E9%97%B4%E6%9C%BA%E5%99%A8-sub"><span class="toc-text">四周目|牧濑红莉栖第一次使用时间机器</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BA%94%E5%91%A8%E7%9B%AE-sub-%E7%89%A7%E6%BF%91%E7%BA%A2%E8%8E%89%E6%A0%96%E7%AC%AC%E4%BA%8C%E6%AC%A1%E4%BD%BF%E7%94%A8%E6%97%B6%E9%97%B4%E6%9C%BA%E5%99%A8-sub"><span class="toc-text">五周目|牧濑红莉栖第二次使用时间机器</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Part-%E2%85%A3-%E5%89%A7%E5%9C%BA%E7%89%88%E7%9B%B8%E5%85%B3%E4%BD%9C%E5%93%81%E6%95%B4%E7%90%86"><span class="toc-text">Part Ⅳ 剧场版相关作品整理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8A%A8%E7%94%BB"><span class="toc-text">动画</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B0%8F%E8%AF%B4"><span class="toc-text">小说</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%BC%AB%E7%94%BB"><span class="toc-text">漫画</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B9%BF%E6%92%AD%E5%89%A7"><span class="toc-text">广播剧</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Part-%E2%85%A4-%E5%85%B6%E4%BB%96%E8%AF%B4%E6%98%8E"><span class="toc-text">Part Ⅴ 其他说明</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A7%91%E5%AD%A6-ADV-%E7%B3%BB%E5%88%97%E7%9B%B8%E5%85%B3%E4%B8%AD%E6%96%87%E8%B5%84%E6%96%99%E7%BD%91%E7%AB%99-sub-%E5%BB%BA%E8%AE%BE%E4%B8%AD-sub"><span class="toc-text">科学 ADV 系列相关中文资料网站|建设中</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A7%91%E5%AD%A6-ADV-%E4%BA%A4%E6%B5%81%E9%A2%91%E9%81%93"><span class="toc-text">科学 ADV 交流频道</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A7%91%E5%AD%A6-ADV-%E7%B2%89%E4%B8%9D%E7%BB%84%E7%BB%87"><span class="toc-text">科学 ADV 粉丝组织</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8F%8D%E7%89%A9%E8%B4%A8%E5%A7%94%E5%91%98%E4%BC%9A"><span class="toc-text">反物质委员会</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%AA%E6%9D%A5%E5%90%8C%E4%BA%BA%E7%A0%94%E7%A9%B6%E6%89%80"><span class="toc-text">未来同人研究所</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%A7%91%E5%AD%A6-ADV-%E5%A4%8D%E5%85%B4%E7%A5%AD"><span class="toc-text">科学 ADV 复兴祭</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#SOS-%E5%9B%A2-%E7%9F%B3%E5%AD%A6%E5%9C%86%E6%A1%8C%E4%BC%9A%E8%AE%AE"><span class="toc-text">SOS 团;石学圆桌会议</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%A7%91%E5%AD%A6-ADV-%E6%80%BB%E5%9F%BA%E5%9C%B0"><span class="toc-text">科学 ADV 总基地</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%B6%E4%BD%9C%E4%BA%BA%E5%91%98%E5%90%8D%E5%8D%95"><span class="toc-text">制作人员名单</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%93%E8%AF%AD"><span class="toc-text">结语</span></a></li></div></section></div></aside></div><footer class="footer clearfix" itemscope itemtype="https://schema.org.cn/WPFooter"><br><br><div class="aplayer-container"><meting-js theme="#1BCDFC" autoplay="false" volume="0.7" loop="all" order="list" fixed="true" list-max-height="320px" server="netease" type="playlist" id="6608242431" list-folded="true"></meting-js></div><div><p><a target="_blank" rel="noopener" href="https://github.com/MCSeekeri/sciadv"><img src="https://img.shields.io/github/last-commit/MCSeekeri/sciadv?style=for-the-badge" alt="commit"></a><a target="_blank" rel="noopener" href="https://github.com/MCSeekeri/sciadv"><img src="https://img.shields.io/github/stars/MCSeekeri/sciadv?style=for-the-badge" alt="star"></a><a target="_blank" rel="noopener" href="https://github.com/MCSeekeri/sciadv"><img src="https://img.shields.io/github/repo-size/MCSeekeri/sciadv?style=for-the-badge" alt="size"></a><a target="_blank" rel="noopener" href="https://github.com/MCSeekeri/sciadv"><img src="https://img.shields.io/github/languages/code-size/MCSeekeri/sciadv?logo=code%20size&amp;style=for-the-badge" alt="code size"></a><a target="_blank" rel="noopener" href="https://status.mcseekeri.com/"><img src="https://img.shields.io/uptimerobot/ratio/m785802121-f726e102d93b206615b80ae4?style=for-the-badge" alt="status"></a></p></div><div><br></div><div><p><span>本站总访问量为 <span id="busuanzi_value_site_pv"><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span> 次</span> <span>访客数为 <span id="busuanzi_value_site_uv"><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span> 人</span></p></div><div class="copyright"><p>本站内容来源自网络 所有权归作者所有</p></div><div><p><a target="_blank" rel="noopener" href="https://hexo.io">![Powered](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOTcuMTkiIGhlaWdodD0iMzUiIHZpZXdCb3g9IjAgMCAxOTcuMTkgMzUiPjxyZWN0IGNsYXNzPSJzdmdfX3JlY3QiIHg9IjAiIHk9IjAiIHdpZHRoPSIxMjcuMjUiIGhlaWdodD0iMzUiIGZpbGw9IiM1NTU1NTUiLz48cmVjdCBjbGFzcz0ic3ZnX19yZWN0IiB4PSIxMjUuMjUiIHk9IjAiIHdpZHRoPSI3MS45NCIgaGVpZ2h0PSIzNSIgZmlsbD0iIzM4OUFENSIvPjxwYXRoIGNsYXNzPSJzdmdfX3RleHQiIGQ9Ik0xNS43MCAyMkwxNC4yMiAyMkwxNC4yMiAxMy40N0wxNy40OCAxMy40N1ExOC45MSAxMy40NyAxOS43NSAxNC4yMVEyMC41OSAxNC45NiAyMC41OSAxNi4xOEwyMC41OSAxNi4xOFEyMC41OSAxNy40NCAxOS43NyAxOC4xM1ExOC45NSAxOC44MyAxNy40NiAxOC44M0wxNy40NiAxOC44M0wxNS43MCAxOC44M0wxNS43MCAyMlpNMTUuNzAgMTQuNjZMMTUuNzAgMTcuNjRMMTcuNDggMTcuNjRRMTguMjcgMTcuNjQgMTguNjkgMTcuMjdRMTkuMTAgMTYuOTAgMTkuMTAgMTYuMTlMMTkuMTAgMTYuMTlRMTkuMTAgMTUuNTAgMTguNjggMTUuMDlRMTguMjYgMTQuNjggMTcuNTIgMTQuNjZMMTcuNTIgMTQuNjZMMTUuNzAgMTQuNjZaTTI0LjYxIDE4LjAwTDI0LjYxIDE4LjAwTDI0LjYxIDE3LjUyUTI0LjYxIDE2LjI4IDI1LjA1IDE1LjMyUTI1LjQ5IDE0LjM3IDI2LjMwIDEzLjg2UTI3LjEwIDEzLjM1IDI4LjE0IDEzLjM1UTI5LjE5IDEzLjM1IDI5Ljk5IDEzLjg1UTMwLjgwIDE0LjM1IDMxLjI0IDE1LjI5UTMxLjY4IDE2LjIzIDMxLjY4IDE3LjQ4TDMxLjY4IDE3LjQ4TDMxLjY4IDE3Ljk2UTMxLjY4IDE5LjIxIDMxLjI1IDIwLjE2UTMwLjgyIDIxLjEwIDMwLjAxIDIxLjYxUTI5LjIxIDIyLjEyIDI4LjE2IDIyLjEyTDI4LjE2IDIyLjEyUTI3LjEyIDIyLjEyIDI2LjMxIDIxLjYxUTI1LjUwIDIxLjEwIDI1LjA1IDIwLjE3UTI0LjYxIDE5LjIzIDI0LjYxIDE4LjAwWk0yNi4wOSAxNy40NkwyNi4wOSAxNy45NlEyNi4wOSAxOS4zNiAyNi42NCAyMC4xM1EyNy4xOCAyMC45MCAyOC4xNiAyMC45MEwyOC4xNiAyMC45MFEyOS4xNCAyMC45MCAyOS42NyAyMC4xNVEzMC4yMCAxOS40MCAzMC4yMCAxNy45NkwzMC4yMCAxNy45NkwzMC4yMCAxNy41MVEzMC4yMCAxNi4wOSAyOS42NyAxNS4zNFEyOS4xMyAxNC41OCAyOC4xNCAxNC41OEwyOC4xNCAxNC41OFEyNy4xOCAxNC41OCAyNi42NCAxNS4zM1EyNi4xMCAxNi4wOSAyNi4wOSAxNy40NkwyNi4wOSAxNy40NlpNMzcuNTMgMjJMMzUuNTYgMTMuNDdMMzcuMDMgMTMuNDdMMzguMzYgMTkuODhMMzkuOTkgMTMuNDdMNDEuMjMgMTMuNDdMNDIuODQgMTkuODlMNDQuMTUgMTMuNDdMNDUuNjIgMTMuNDdMNDMuNjUgMjJMNDIuMjQgMjJMNDAuNjEgMTUuNzdMMzguOTYgMjJMMzcuNTMgMjJaTTU1LjI3IDIyTDQ5LjcwIDIyTDQ5LjcwIDEzLjQ3TDU1LjIzIDEzLjQ3TDU1LjIzIDE0LjY2TDUxLjE4IDE0LjY2TDUxLjE4IDE3LjAyTDU0LjY4IDE3LjAyTDU0LjY4IDE4LjE5TDUxLjE4IDE4LjE5TDUxLjE4IDIwLjgyTDU1LjI3IDIwLjgyTDU1LjI3IDIyWk02MC45NSAyMkw1OS40NyAyMkw1OS40NyAxMy40N0w2Mi40NyAxMy40N1E2My45NSAxMy40NyA2NC43NSAxNC4xM1E2NS41NSAxNC43OSA2NS41NSAxNi4wNUw2NS41NSAxNi4wNVE2NS41NSAxNi45MCA2NS4xNCAxNy40OFE2NC43MiAxOC4wNiA2My45OSAxOC4zN0w2My45OSAxOC4zN0w2NS45MCAyMS45Mkw2NS45MCAyMkw2NC4zMSAyMkw2Mi42MCAxOC43MUw2MC45NSAxOC43MUw2MC45NSAyMlpNNjAuOTUgMTQuNjZMNjAuOTUgMTcuNTJMNjIuNDggMTcuNTJRNjMuMjMgMTcuNTIgNjMuNjUgMTcuMTVRNjQuMDcgMTYuNzcgNjQuMDcgMTYuMTFMNjQuMDcgMTYuMTFRNjQuMDcgMTUuNDMgNjMuNjggMTUuMDVRNjMuMjkgMTQuNjggNjIuNTIgMTQuNjZMNjIuNTIgMTQuNjZMNjAuOTUgMTQuNjZaTTc1LjUyIDIyTDY5Ljk1IDIyTDY5Ljk1IDEzLjQ3TDc1LjQ4IDEzLjQ3TDc1LjQ4IDE0LjY2TDcxLjQzIDE0LjY2TDcxLjQzIDE3LjAyTDc0LjkzIDE3LjAyTDc0LjkzIDE4LjE5TDcxLjQzIDE4LjE5TDcxLjQzIDIwLjgyTDc1LjUyIDIwLjgyTDc1LjUyIDIyWk04Mi4xNyAyMkw3OS43MiAyMkw3OS43MiAxMy40N0w4Mi4yNCAxMy40N1E4My4zNyAxMy40NyA4NC4yNSAxMy45N1E4NS4xMiAxNC40OCA4NS42MCAxNS40MFE4Ni4wOCAxNi4zMyA4Ni4wOCAxNy41Mkw4Ni4wOCAxNy41Mkw4Ni4wOCAxNy45NVE4Ni4wOCAxOS4xNiA4NS42MCAyMC4wOFE4NS4xMiAyMS4wMCA4NC4yMiAyMS41MFE4My4zMyAyMiA4Mi4xNyAyMkw4Mi4xNyAyMlpNODEuMjAgMTQuNjZMODEuMjAgMjAuODJMODIuMTcgMjAuODJRODMuMzMgMjAuODIgODMuOTYgMjAuMDlRODQuNTggMTkuMzYgODQuNTkgMTcuOTlMODQuNTkgMTcuOTlMODQuNTkgMTcuNTJRODQuNTkgMTYuMTMgODMuOTkgMTUuNDBRODMuMzkgMTQuNjYgODIuMjQgMTQuNjZMODIuMjQgMTQuNjZMODEuMjAgMTQuNjZaTTk5LjY0IDIyTDk2LjUyIDIyTDk2LjUyIDEzLjQ3TDk5LjQ1IDEzLjQ3UTEwMC44OSAxMy40NyAxMDEuNjUgMTQuMDVRMTAyLjQxIDE0LjYzIDEwMi40MSAxNS43OEwxMDIuNDEgMTUuNzhRMTAyLjQxIDE2LjM2IDEwMi4wOSAxNi44M1ExMDEuNzcgMTcuMzAgMTAxLjE2IDE3LjU2TDEwMS4xNiAxNy41NlExMDEuODYgMTcuNzUgMTAyLjIzIDE4LjI2UTEwMi42MSAxOC43OCAxMDIuNjEgMTkuNTFMMTAyLjYxIDE5LjUxUTEwMi42MSAyMC43MSAxMDEuODQgMjEuMzZRMTAxLjA3IDIyIDk5LjY0IDIyTDk5LjY0IDIyWk05OC4wMSAxOC4xNUw5OC4wMSAyMC44Mkw5OS42NSAyMC44MlExMDAuMzUgMjAuODIgMTAwLjc0IDIwLjQ3UTEwMS4xNCAyMC4xMyAxMDEuMTQgMTkuNTFMMTAxLjE0IDE5LjUxUTEwMS4xNCAxOC4xOCA5OS43OCAxOC4xNUw5OS43OCAxOC4xNUw5OC4wMSAxOC4xNVpNOTguMDEgMTQuNjZMOTguMDEgMTcuMDZMOTkuNDYgMTcuMDZRMTAwLjE1IDE3LjA2IDEwMC41NCAxNi43NVExMDAuOTMgMTYuNDMgMTAwLjkzIDE1Ljg2TDEwMC45MyAxNS44NlExMDAuOTMgMTUuMjMgMTAwLjU3IDE0Ljk1UTEwMC4yMSAxNC42NiA5OS40NSAxNC42Nkw5OS40NSAxNC42Nkw5OC4wMSAxNC42NlpNMTA5LjEyIDE4Ljg2TDEwNi4yNiAxMy40N0wxMDcuOTAgMTMuNDdMMTA5Ljg3IDE3LjUxTDExMS44MyAxMy40N0wxMTMuNDcgMTMuNDdMMTEwLjYxIDE4Ljg2TDExMC42MSAyMkwxMDkuMTIgMjJMMTA5LjEyIDE4Ljg2WiIgZmlsbD0iI0ZGRkZGRiIvPjxwYXRoIGNsYXNzPSJzdmdfX3RleHQiIGQ9Ik0xNDEuODIgMjJMMTM5LjQ0IDIyTDEzOS40NCAxMy42MEwxNDEuODIgMTMuNjBMMTQxLjgyIDE2Ljc2TDE0NS4wNiAxNi43NkwxNDUuMDYgMTMuNjBMMTQ3LjQzIDEzLjYwTDE0Ny40MyAyMkwxNDUuMDYgMjJMMTQ1LjA2IDE4LjcyTDE0MS44MiAxOC43MkwxNDEuODIgMjJaTTE1OS4zNCAyMkwxNTIuNTkgMjJMMTUyLjU5IDEzLjYwTDE1OS4xOCAxMy42MEwxNTkuMTggMTUuNDRMMTU0Ljk1IDE1LjQ0TDE1NC45NSAxNi44NUwxNTguNjggMTYuODVMMTU4LjY4IDE4LjYzTDE1NC45NSAxOC42M0wxNTQuOTUgMjAuMTdMMTU5LjM0IDIwLjE3TDE1OS4zNCAyMlpNMTY1Ljk5IDIyTDE2My4yOCAyMkwxNjYuMzQgMTcuNzVMMTYzLjQxIDEzLjYwTDE2Ni4wOSAxMy42MEwxNjcuNzcgMTYuMDJMMTY5LjQyIDEzLjYwTDE3MS45OSAxMy42MEwxNjkuMDYgMTcuNjZMMTcyLjE5IDIyTDE2OS40NSAyMkwxNjcuNzEgMTkuNDBMMTY1Ljk5IDIyWk0xNzYuMDQgMTcuODBMMTc2LjA0IDE3LjgwUTE3Ni4wNCAxNi41NSAxNzYuNjQgMTUuNTVRMTc3LjI1IDE0LjU2IDE3OC4zMSAxNC4wMFExNzkuMzggMTMuNDMgMTgwLjcxIDEzLjQzTDE4MC43MSAxMy40M1ExODIuMDQgMTMuNDMgMTgzLjEwIDE0LjAwUTE4NC4xNiAxNC41NiAxODQuNzcgMTUuNTVRMTg1LjM4IDE2LjU1IDE4NS4zOCAxNy44MEwxODUuMzggMTcuODBRMTg1LjM4IDE5LjA1IDE4NC43NyAyMC4wNFExODQuMTYgMjEuMDQgMTgzLjEwIDIxLjYwUTE4Mi4wNCAyMi4xNyAxODAuNzEgMjIuMTdMMTgwLjcxIDIyLjE3UTE3OS4zOCAyMi4xNyAxNzguMzEgMjEuNjBRMTc3LjI1IDIxLjA0IDE3Ni42NCAyMC4wNFExNzYuMDQgMTkuMDUgMTc2LjA0IDE3LjgwWk0xNzguNDQgMTcuODBMMTc4LjQ0IDE3LjgwUTE3OC40NCAxOC41MSAxNzguNzQgMTkuMDVRMTc5LjA0IDE5LjYwIDE3OS41NiAxOS45MFExODAuMDcgMjAuMjAgMTgwLjcxIDIwLjIwTDE4MC43MSAyMC4yMFExODEuMzQgMjAuMjAgMTgxLjg2IDE5LjkwUTE4Mi4zOCAxOS42MCAxODIuNjcgMTkuMDVRMTgyLjk3IDE4LjUxIDE4Mi45NyAxNy44MEwxODIuOTcgMTcuODBRMTgyLjk3IDE3LjA5IDE4Mi42NyAxNi41NFExODIuMzggMTYgMTgxLjg2IDE1LjcwUTE4MS4zNCAxNS40MCAxODAuNzEgMTUuNDBMMTgwLjcxIDE1LjQwUTE4MC4wNyAxNS40MCAxNzkuNTUgMTUuNzBRMTc5LjA0IDE2IDE3OC43NCAxNi41NFExNzguNDQgMTcuMDkgMTc4LjQ0IDE3LjgwWiIgZmlsbD0iI0ZGRkZGRiIgeD0iMTM4LjI1Ii8+PC9zdmc+)</a></p></div></footer><a id="s-top" class="fa-solid fa-arrow-up fa-fw" title="top"></a></div></div><div><script>volantis.dom.bodyAnchor=volantis.dom.$(document.getElementById("safearea")),volantis.dom.topBtn=volantis.dom.$(document.getElementById("s-top")),volantis.dom.wrapper=volantis.dom.$(document.getElementById("wrapper")),volantis.dom.coverAnchor=volantis.dom.$(document.querySelector("#l_cover .cover-wrapper")),volantis.dom.switcher=volantis.dom.$(document.querySelector("#l_header .switcher .s-search")),volantis.dom.header=volantis.dom.$(document.getElementById("l_header")),volantis.dom.search=volantis.dom.$(document.querySelector("#l_header .m_search")),volantis.dom.mPhoneList=volantis.dom.$(document.querySelectorAll("#l_header .m-phone .list-v"))</script><script>volantis.css("https://font.onmicrosoft.cn/font6pro@6.2.0/css/all.min.css"),volantis.css("https://cdn.bootcdn.net/ajax/libs/node-waves/0.7.6/waves.min.css")</script><script src="/js/app.js"></script><script>const rootElement = document.documentElement;
+const darkModeStorageKey = "color-scheme";
+const rootElementDarkModeAttributeName = "color-scheme";
+const setLS = (k, v) => {
+    localStorage.setItem(k, v);
+};
+const removeLS = (k) => {
+    localStorage.removeItem(k);
+};
+const getLS = (k) => {
+    return localStorage.getItem(k);
+};
+const getModeFromCSSMediaQuery = () => {
+  return window.matchMedia("(prefers-color-scheme: dark)").matches
+    ? "dark"
+    : "light";
+};
+const resetRootDarkModeAttributeAndLS = () => {
+  rootElement.removeAttribute(rootElementDarkModeAttributeName);
+  removeLS(darkModeStorageKey);
+};
+const validColorModeKeys = {
+  dark: true,
+  light: true,
+};
+const applyCustomDarkModeSettings = (mode) => {
+  const currentSetting = mode || getLS(darkModeStorageKey);
+  getCustomDarkMode();
+  if (currentSetting === getModeFromCSSMediaQuery()) {
+    resetRootDarkModeAttributeAndLS();
+  } else if (validColorModeKeys[currentSetting]) {
+    rootElement.setAttribute(rootElementDarkModeAttributeName, currentSetting);
+  } else {
+    resetRootDarkModeAttributeAndLS();
+  }
+};
+const invertDarkModeObj = {
+  dark: "light",
+  light: "dark",
+};
+/**
+ * get target mode
+ */
+ const getCustomDarkMode = () => {
+  let currentSetting = getLS(darkModeStorageKey);
+  if (validColorModeKeys[currentSetting]) {
+    currentSetting = invertDarkModeObj[currentSetting];
+  } else if (currentSetting === null) {
+    currentSetting = invertDarkModeObj[getModeFromCSSMediaQuery()];
+  } else {
+    return;
+  }
+  if(currentSetting=="dark"){
+    volantis.dark.mode="light";
+  }else{
+    volantis.dark.mode="dark";
+  }
+  // console.log(volantis.dark.mode)
+};
+const toggleCustomDarkMode = () => {
+  let currentSetting = getLS(darkModeStorageKey);
+  if (validColorModeKeys[currentSetting]) {
+    currentSetting = invertDarkModeObj[currentSetting];
+  } else if (currentSetting === null) {
+    currentSetting = invertDarkModeObj[getModeFromCSSMediaQuery()];
+  } else {
+    return;
+  }
+  setLS(darkModeStorageKey, currentSetting);
+  return currentSetting;
+};
+/**
+ * 暗黑模式触发器
+ */
+volantis.dark.toggle=()=>{
+  const mode = toggleCustomDarkMode();
+  applyCustomDarkModeSettings(mode);
+  // 使用 volantis.dark.push 方法传入volantis.dark.toggle回调函数 参见layout/_partial/scripts/global.ejs
+  volantis.dark.method.toggle.start();
+}
+/**
+ * bind event for toggle button
+ */
+
+function bindToggleButton() {
+  var btn= document.querySelectorAll("#wrapper .toggle-mode-btn,#rightmenu-wrapper .toggle-mode-btn")
+  btn.forEach(function (e) {
+    volantis.dom.$(e).on('click',volantis.dark.toggle);
+  })
+}
+applyCustomDarkModeSettings();
+document.addEventListener("DOMContentLoaded", ()=>{
+  volantis.requestAnimationFrame(bindToggleButton)
+});
+
+const darkModelListeners={
+  dark:(mediaQueryList )=>{
+    if(mediaQueryList.matches){
+      volantis.dark.mode = "dark";
+    }
+    volantis.dark.method.toggle.start();
+  },
+  light:(mediaQueryList)=>{
+    if(mediaQueryList.matches){
+      volantis.dark.mode = "light";
+    }
+    volantis.dark.method.toggle.start();
+  }
+}
+window.matchMedia('(prefers-color-scheme: dark)').addListener(darkModelListeners.dark)
+window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListeners.light)</script><script defer="defer" src="https://cdn.bootcdn.net/ajax/libs/vanilla-lazyload/17.8.5/lazyload.min.js"></script><script>window.lazyLoadOptions={elements_selector:".lazyload",threshold:0},window.addEventListener("LazyLoad::Initialized",function(n){window.lazyLoadInstance=n.detail.instance},!1),document.addEventListener("DOMContentLoaded",function(){lazyLoadInstance.update()})</script><script>window.FPConfig={delay:0,ignoreKeywords:["#"],maxRPS:6,hoverDelay:0}</script><script defer="defer" src="https://unpkg.com/volantis-static@0.0.1660614606622/libs/flying-pages/flying-pages.min.js"></script><script type="text/javascript">function p_scrollrebeal(){ScrollReveal().reveal("#l_main .reveal",{distance:"32px",duration:"500",interval:"20",scale:"1",easing:"ease-out"})}function init_scrollrebeal(){"undefined"==typeof ScrollReveal?volantis.requestAnimationFrame(init_scrollrebeal):p_scrollrebeal()}volantis.js("https://cdn.bootcdn.net/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"),document.addEventListener("DOMContentLoaded",init_scrollrebeal)</script><script>volantis.css("https://cdn.bootcdn.net/ajax/libs/aplayer/1.10.1/APlayer.min.css");
+
+  
+    (async () => {
+      // APlayer 需要在  MetingJS 之前加载
+      await volantis.js("https://cdn.bootcdn.net/ajax/libs/aplayer/1.10.1/APlayer.min.js")
+      await volantis.js("https://unpkg.com/meting@2.0.1/dist/Meting.min.js")
+    
+    })();
+
+    function SetAPlayerPlugin(){
+      let Metings = document.querySelectorAll('meting-js');
+      if (Metings.length === 0) {return;};
+      if (Metings[0].aplayer && Metings[0].aplayer.on) {
+        // improve the accessibility https://web.dev/button-name/
+        document.querySelectorAll(".aplayer-icon-menu").forEach(e=>{
+          e.setAttribute("aria-label","Aplayer Menu")
+        })
+        // message see: /layout/_plugins/message/script.ejs
+        
+          try {
+            setTimeout(() => {
+              Metings.forEach((item, index) => {
+                const aplayerItem = item.aplayer; if(!aplayerItem) return;
+                const rightAplayerCheck = 'true' === 'true'
+                  && item.meta.id === '6608242431';
+                if(rightAplayerCheck && typeof RightMenuAplayer !="undefined") RightMenuAplayer.checkAPlayer();
+                if(aplayerItem.events.events.play.every(item => {return item.name !== 'messagePlay'})) {
+                  aplayerItem.on('play', function messagePlay() {
+                    let index = aplayerItem.list.index;
+                    let title = aplayerItem.list.audios[index].title;
+                    let artist = aplayerItem.list.audios[index].artist;
+                    setTimeout(() => {
+                      VolantisApp.message('音乐通知', title + ' - ' + artist, {
+                        icon: 'fa-solid fa-play',
+                        transitionIn: 'flipInX',
+                        transitionOut: 'flipOutX'
+                      });
+                    }, 100)
+                  });
+                }
+                if(aplayerItem.events.events.pause.every(item => {return item.name !== 'messagePause'})) {
+                  aplayerItem.on('pause', function messagePause() {
+                    let index = aplayerItem.list.index;
+                    let title = aplayerItem.list.audios[index].title;
+                    let artist = aplayerItem.list.audios[index].artist;
+                    setTimeout(() => {
+                      // 歌曲播放结束也会触发 pause 事件，为了避免错误提示，等待一会儿
+                      if(aplayerItem.paused) {
+                        VolantisApp.message('音乐通知', title + ' - ' + artist, {
+                          icon: 'fa-solid fa-pause',
+                          transitionIn: 'flipInX',
+                          transitionOut: 'flipOutX'
+                        });
+                      }
+                    }, 100)
+                  });
+                }
+              });
+            }, 500)
+          } catch (error) { console.error(error); }
+        
+      }else{
+        volantis.requestAnimationFrame(SetAPlayerPlugin)
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", ()=>{
+      SetAPlayerPlugin();
+    });</script><script>volantis.layoutHelper("comments",`<div id="waline"><i class="fa-solid fa-cog fa-spin fa-fw fa-2x"></i></div>`)
+  
+  function p_waline() {
+    if(!document.querySelector("#waline"))return;
+    let locale = {};
+    let path = pdata.commentPath;
+    let pagePlaceholder = pdata.commentPlaceholder || "欢迎在此发表您对本文的看法，本站评论只需填写昵称和接受回复用的邮箱";
+    if (path.length == 0) {
+      let defaultPath = '';
+      path = defaultPath || decodeURI(window.location.pathname);
+    }
+    if(pagePlaceholder.length != 0) {
+      locale.placeholder = pagePlaceholder;
+    }
+
+    try {
+      Waline.init(Object.assign(Object.assign({"path":null,"placeholder":"欢迎在此发表您对本文的看法，本站评论只需填写昵称和接受回复用的邮箱","serverURL":"https://comments.sci-adv.cc","imageUploader":{"fileName":null,"tokenName":null,"api":null,"token":null,"resp":null},"pageview":true,"comment":true,"js":"https://unpkg.com/@waline/client@v2/dist/waline.js","css":"https://unpkg.com/@waline/client@v2/dist/waline.css","meta":["nick","mail","link"],"requiredFields":["nick","mail"],"recaptchaV3Key":"6Lf9KTAbAAAAALfqwFyJmbRTABDc3MwyCKo696gp","emoji":["https://cdn.jsdelivr.net/gh/GamerNoTitle/ValineCDN@master/QQ","https://cdn.jsdelivr.net/gh/GamerNoTitle/ValineCDN@master/Tieba","https://cdn.jsdelivr.net/gh/GamerNoTitle/ValineCDN@master/Tieba-New","https://cdn.jsdelivr.net/gh/GamerNoTitle/ValineCDN@master/weibo","https://cdn.jsdelivr.net/gh/GamerNoTitle/ValineCDN@master/Coolapk","https://cdn.jsdelivr.net/gh/GamerNoTitle/ValineCDN@master/Heybox","https://cdn.jsdelivr.net/gh/GamerNoTitle/ValineCDN@master/bilibili2233/","https://cdn.jsdelivr.net/gh/GamerNoTitle/ValineCDN@master/Menhera-chan"],"reaction":["https://unpkg.com/@waline/emojis@1.2.0/tieba/tieba_agree.png","https://unpkg.com/@waline/emojis@1.2.0/tieba/tieba_doubt.png","https://unpkg.com/@waline/emojis@1.2.0/tieba/tieba_heart.png","https://unpkg.com/@waline/emojis@1.2.0/tieba/tieba_lovely.png","https://unpkg.com/@waline/emojis@1.2.0/tieba/tieba_rage.png","https://unpkg.com/@waline/emojis@1.2.0/tieba/tieba_cry.png","https://unpkg.com/@waline/emojis@1.2.0/tieba/tieba_awkward.png","https://unpkg.com/@waline/emojis@1.2.0/tieba/tieba_vomit.png"]}, {
+        el: '#waline',
+        path: path,
+        // https://github.com/volantis-x/hexo-theme-volantis/issues/713
+        
+        locale,
+      }),pdata.commentConfig));
+    } catch (error) {
+      alert(`Waline ${error}`)
+    }
+    fancybox_waline()
+  }
+
+  function fancybox_waline() {
+    if(typeof VolantisFancyBox === "undefined") {
+      const checkFancyBox = setInterval(() => {
+        if(typeof VolantisFancyBox === "undefined") return;
+        clearInterval(checkFancyBox);
+        VolantisFancyBox.bind('#waline .wl-content img:not(.wl-emoji)');
+      })
+    } else {
+      VolantisFancyBox.bind('#waline .wl-content img:not(.wl-emoji)');
+    }
+  }
+
+  volantis.css('https://cdn.bootcdn.net/ajax/libs/waline/3.0.0-alpha.11/waline.min.css')
+  volantis.js('https://cdn.bootcdn.net/ajax/libs/waline/3.0.0-alpha.11/waline.min.js').then(p_waline)</script><script defer="defer" src="https://npm.elemecdn.com/penndu@1.0.0/bsz.js"></script><script>async function loadSearchScript() {
+    
+        
+    
+    return volantis.js("/js/search/hexo.js");
+  }
+
+  function loadSearchService() {
+    loadSearchScript();
+    document.querySelectorAll(".input.u-search-input").forEach((e) => {
+      e.removeEventListener("focus", loadSearchService, false);
+    });
+
+    document.querySelectorAll(".u-search-form").forEach((e) => {
+      e.addEventListener("submit", (event) => {
+        event.preventDefault();
+      }, false);
+    });
+  }
+
+  // 打开并搜索 字符串 s
+  function OpenSearch(s) {
+    if (typeof SearchService === 'undefined')
+      loadSearchScript().then(() => {
+        SearchService.setQueryText(s);
+        SearchService.search();
+      });
+    else {
+      SearchService.setQueryText(s);
+      SearchService.search();
+    }
+  }
+
+  // 访问含有 ?s=xxx  的链接时打开搜索 // 与搜索引擎 structured data 相关: /scripts/helpers/structured-data/lib/config.js
+  if (window.location.search && /^\?s=/g.test(window.location.search)) {
+    let queryText = decodeURI(window.location.search)
+      .replace(/\ /g, "-")
+      .replace(/^\?s=/g, "");
+    OpenSearch(queryText);
+  }
+
+  // 搜索输入框获取焦点时加载搜索
+  document.querySelectorAll(".input.u-search-input").forEach((e) => {
+    e.addEventListener("focus", loadSearchService, false);
+  });</script><script src="https://cdn.bootcdn.net/ajax/libs/node-waves/0.7.6/waves.min.js"></script><script type="text/javascript">document.addEventListener("DOMContentLoaded",function(){Waves.attach(".flat-btn",["waves-button"]),Waves.attach(".float-btn",["waves-button","waves-float"]),Waves.attach(".float-btn-light",["waves-button","waves-float","waves-light"]),Waves.attach(".flat-box",["waves-block"]),Waves.attach(".float-box",["waves-block","waves-float"]),Waves.attach(".waves-image"),Waves.init()})</script><script>function p_highlightjs_copyCode(){(document.querySelector(".highlight .code pre")||document.querySelector(".article pre code"))&&VolantisApp.utilCopyCode(".highlight .code pre, .article pre code")}volantis.requestAnimationFrame(p_highlightjs_copyCode)</script><script>setTimeout(function(){function a(){dataLayer.push(arguments)}volantis.js("https://www.googletagmanager.com/gtag/js?id=G-MC8C2DMQ7M"),window.dataLayer=window.dataLayer||[],a("js",new Date),a("config","G-MC8C2DMQ7M")},1e3)</script><script>volantis.css("https://cdn.bootcdn.net/ajax/libs/pace/1.2.4/themes/blue/pace-theme-minimal.min.css");
+  volantis.js("https://cdn.bootcdn.net/ajax/libs/pace/1.2.4/pace.min.js").then(() => {
+    Pace.options.restartOnPushState = false;
+    // 阅读进度
+    volantis.scroll.push(() => {
+      Pace.stop();
+      Pace.trigger('start');
+      Pace.bar.update(volantis.scroll.progress() * 100);
+      document.body.className = document.body.className.replaceAll("pace-running ","");
+    },"阅读进度")
+    // todo：配置项开关, 哪些页面添加阅读进度
+  })</script><script>function listenSidebarTOC() {
+    const navItems = document.querySelectorAll(".toc li");
+    if (!navItems.length) return;
+    const targets = []
+    const sections = Array.from(navItems).forEach((element) => {
+      const link = element.querySelector(".toc-link");
+      const target = document.getElementById(
+        link.getAttribute("href") ? decodeURI(link.getAttribute("href")).replace("#", "") : link.getAttribute("toc-action").split("toc-")[1] // 兼容 hexo-blog-encrypt
+      );
+      targets.push(target)
+      // 解除 a 标签 href 的 锚点定位, a 标签 href 的 锚点定位 会随机启用?? 产生错位???
+      if (link.getAttribute("href")) {
+        link.setAttribute("toc-action", "toc-" + decodeURI(link.getAttribute("href")).replace("#", ""))
+        link.removeAttribute("href")
+      }
+      // 配置 点击 触发新的锚点定位
+      if (target && target.id) {
+        link.addEventListener("click", (event) => {
+          event.preventDefault();
+          // 这里的 addTop 是通过错位使得 toc 自动展开.
+          volantis.scroll.to(target, { addTop: 5, observer: true })
+          // Anchor id
+          history.pushState(null, document.title, "#" + target.id);
+        });
+      }
+      return target;
+    });
+
+    function activateNavByIndex(target) {
+      if (target.classList.contains("active-current")) return;
+
+      document.querySelectorAll(".toc .active").forEach((element) => {
+        element.classList.remove("active", "active-current");
+      });
+      target.classList.add("active", "active-current");
+      let parent = target.parentNode;
+      while (!parent.matches(".toc")) {
+        if (parent.matches("li")) parent.classList.add("active");
+        parent = parent.parentNode;
+      }
+    }
+
+    // 方案一：
+    volantis.activateNavIndex = 0
+    activateNavByIndex(navItems[volantis.activateNavIndex])
+    if (targets[0]) {
+      volantis.scroll.push(() => {
+        if (targets[0].getBoundingClientRect().top >= 0) {
+          volantis.activateNavIndex = 0
+        } else if (targets[targets.length - 1].getBoundingClientRect().top < 0) {
+          volantis.activateNavIndex = targets.length - 1
+        } else {
+          for (let index = 0; index < targets.length; index++) {
+            const target0 = targets[index];
+            const target1 = targets[(index + 1) % targets.length];
+            if (target0.getBoundingClientRect().top < 0 && target1.getBoundingClientRect().top >= 0) {
+              volantis.activateNavIndex = index
+              break;
+            }
+          }
+        }
+        activateNavByIndex(navItems[volantis.activateNavIndex])
+      })
+    }
+
+    // 方案二：
+    // IntersectionObserver 不是完美精确到像素级别 也不是低延时性的
+    // function findIndex(entries) {
+    //   let index = 0;
+    //   let entry = entries[index];
+    //   if (entry.boundingClientRect.top > 0) {
+    //     index = sections.indexOf(entry.target);
+    //     return index === 0 ? 0 : index - 1;
+    //   }
+    //   for (; index < entries.length; index++) {
+    //     if (entries[index].boundingClientRect.top <= 0) {
+    //       entry = entries[index];
+    //     } else {
+    //       return sections.indexOf(entry.target);
+    //     }
+    //   }
+    //   return sections.indexOf(entry.target);
+    // }
+    // function createIntersectionObserver(marginTop) {
+    //   marginTop = Math.floor(marginTop + 10000);
+    //   let intersectionObserver = new IntersectionObserver(
+    //     (entries, observe) => {
+    //       let scrollHeight = document.documentElement.scrollHeight;
+    //       if (scrollHeight > marginTop) {
+    //         observe.disconnect();
+    //         createIntersectionObserver(scrollHeight);
+    //         return;
+    //       }
+    //       let index = findIndex(entries);
+    //       activateNavByIndex(navItems[index]);
+    //     }, {
+    //       rootMargin: marginTop + "px 0px -100% 0px",
+    //       threshold: 0,
+    //     }
+    //   );
+    //   sections.forEach((element) => {
+    //     element && intersectionObserver.observe(element);
+    //   });
+    // }
+    // createIntersectionObserver(document.documentElement.scrollHeight);
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    volantis.requestAnimationFrame(listenSidebarTOC)
+  });</script><script>document.onreadystatechange = function () {
+    if (document.readyState == 'complete') {
+      // 页面加载完毕 样式加载失败，或是当前网速慢，或是开启了省流模式
+      const { saveData, effectiveType } = navigator.connection || navigator.mozConnection || navigator.webkitConnection || {}
+      if (getComputedStyle(document.querySelector("#safearea"), null)["display"] == "none" || saveData || /2g/.test(effectiveType)) {
+        document.querySelectorAll(".reveal").forEach(function (e) {
+          e.style["opacity"] = "1";
+        });
+        document.querySelector("#safearea").style["display"] = "block";
+      }
+    }
+  }</script></div><script type="text/javascript">!function(t,e,n,c,a,r,s){t[n]=t[n]||function(){(t[n].q=t[n].q||[]).push(arguments)},(r=e.createElement(c)).async=1,r.src="https://www.clarity.ms/tag/mlyat0xp7c",(s=e.getElementsByTagName(c)[0]).parentNode.insertBefore(r,s)}(window,document,"clarity","script")</script></body></html>
